@@ -2,6 +2,8 @@
 
 **English summary.** A community trading desk for the FLOP Labs *Close Call* contest (season `close-1`, `xyz:NVDA`) on technocore.chat. A browser UI and a command line share one core: Ed25519 `did:key` signing, an offer book, referee message reading, and a JavaScript port of the official fold. Your private key never leaves the browser tab; only signed messages are sent. No dependencies, Node 20+. The UI has a TR/EN switch; this README is in Turkish. **Not an official FLOP Labs product.**
 
+**Live:** https://ugozfb.github.io/close-call-masasi/ (no install). To run it locally instead:
+
 ```sh
 git clone https://github.com/ugozfb/close-call-masasi closecall-core
 cd closecall-core
@@ -15,9 +17,11 @@ Close Call (FLOP Labs, close-1) için topluluk aracı: tarayıcı arayüzü, kom
 
 ![Close Call Masası ana ekran, canlı veri](docs/img/01-ana-ekran.png)
 
+**Kurulumsuz:** https://ugozfb.github.io/close-call-masasi/ adresini aç. Ayrıntılar ve farkı aşağıda, "Web'den kullanım" bölümünde.
+
 ## Hızlı başlangıç (Windows 10, PowerShell 5.1)
 
-Komutları tek tek yaz; PowerShell 5.1'de `&&` çalışmaz.
+Kendi bilgisayarında, yerel köprüyle çalıştırmak için. Komutları tek tek yaz; PowerShell 5.1'de `&&` çalışmaz.
 
 1. Node sürümü 20 veya üstü olmalı:
    ```powershell
@@ -92,7 +96,12 @@ Hakem her turda bir akış mesajı yayımlar. Settled işlemlerin kimlikleri ço
 
 ## Web'den kullanım (GitHub Pages)
 
-Arayüz yerel köprü olmadan doğrudan technocore.chat'e bağlanabilir; GitHub Pages'te `ui/` bu kipte açılır. Bu, sunucunun tarayıcıya CORS izni vermesine bağlıdır ve **henüz denenmedi**. Bağlantı kurulamazsa yukarıdaki yerel köprüyü kullan.
+Adres: https://ugozfb.github.io/close-call-masasi/
+
+- **Bağlantı:** Sayfa technocore.chat'e doğrudan bağlanır; sağ üstte "doğrudan · saat" yazar. Sunucu buna CORS ile izin veriyor: okuma canlıda çalıştı, gönderimin ön sorgusuna da izin dönüyor (ayrıntı "Doğrulananlar"da).
+- **Anahtar:** Yine tarayıcıdan çıkmaz. Fark şu: sayfanın kodu her açılışta GitHub'dan gelir; yerel köprüde ise kendi bilgisayarındaki kopyadan. Kodu kendin denetlemek istiyorsan yerel köprüyü kullan.
+- **Kayıtlar adrese bağlıdır:** Tarayıcı, gönderim kaydını, nonce'ları ve sonuçları her adres için ayrı tutar. Yerel köprüde (`127.0.0.1`) yaptıkların GitHub adresinde görünmez, tersi de. Kayıt bir kez yeter; öbür adreste "Kayıt ol"a yeniden basma.
+- **Bağlanamazsa:** Üst çubukta "doğrudan bağlantı yok (CORS ya da ağ)" yazar. O zaman yukarıdaki yerel köprüyü kullan.
 
 ## Arayüzün sınırları
 
@@ -148,6 +157,7 @@ Başka biçim yok sayılır; görülmeyen likiditenin var ya da yok olduğu vars
 - **v0.2:** Node v24.15.0, `npm.cmd test` 18/18. `durum` canlı hakemi okudu: tur 261, gecikme 0.
 - **v0.3.0:** Sayfa açıldı, yerel köprü bağlandı. Hakem turu 268 "zamanında"; defter, grafik, açık miktar ve son işlemler doldu.
 - **v0.3.2:** Tur eşleme denetimi: hakem listesinde kimliği geçen 212 işlemin 212'sinde kayıt zamanından hesaplanan tur, listelendiği turla aynı.
+- **v0.3.4, GitHub Pages (26 Eylül):** Sayfa `ugozfb.github.io`'dan açıldı ve doğrudan bağlandı; referans, tur 374 "zamanında", defter, açık miktar ve son işlemler doldu. Gönderim ön sorgusu (`OPTIONS /r/close1`, Origin `https://ugozfb.github.io`) 200 döndü: `Access-Control-Allow-Origin: *`, `Access-Control-Allow-Methods: GET, POST`, izin verilen başlıklarda `Content-Type`.
 - **v0.3.3, canlı kayıt ve işlem (26 Eylül):**
   - Kayıt arayüzden gönderildi; sunucu 200 döndü, 361. turda işlendi.
   - Test kabulü (LONG 0.10 @ 224.62) gönderildi; sunucu 200 döndü. Hakem 363. turda `void · funds` yazdı.
@@ -174,7 +184,7 @@ Başka biçim yok sayılır; görülmeyen likiditenin var ya da yok olduğu vars
 - **Canlı teklif (maker):** Arayüzden ya da komut satırından canlı bir teklif yayımlanmadı.
 - **Canlı settled işlem:** Kendi hesabımızda settled bir işlem görülmedi. Defter ve bakiye hesabı resmî fold vektörleriyle ve testte sınandı, canlıda değil.
 - **Komut satırıyla canlı gönderim:** `--gonder` gerçek sunucuda denenmedi; canlı gönderimler arayüzden yapıldı.
-- **GitHub Pages / doğrudan bağlantı:** Sunucunun CORS iznine bağlı; denenmedi.
+- **GitHub Pages'ten gerçek gönderim:** Ön sorgu izin veriyor, ama bu adresten henüz gerçek bir mesaj gönderilmedi. Canlı gönderimler yerel köprüden yapıldı.
 - **Hakemin void listesini hangi sırayla kısalttığı:** Bilinmiyor. Liste kısaltılmışsa sonuç "bilinmiyor" kalır.
 - **İmza doğrulamasında uç durumlar:** Doğrulama Web Crypto ile, sunucu libsodium ile. Kötü niyetli uç durum imzalarında ikisi ayrışabilir.
 - **Hakem DID'inin close-1 kaydı:** Kullanılan DID canlı hakem odalarını imzalayan anahtar ve FLOP Labs'ın sonnet-2 LAUNCH.md'sindeki hakem DID'iyle aynı. Close-1 için imzalı bir launch kaydı bulunamadı.
