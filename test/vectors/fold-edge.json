@@ -1,0 +1,398 @@
+[
+ {
+  "name": "vwap-yarim-cift-asagi",
+  "config": {},
+  "lines": [
+   "{\"t\": \"seed\", \"px\": \"100.00\"}",
+   "{\"t\": \"sweep\", \"n\": 1, \"ref\": \"100.00\", \"close\": \"100.00\", \"owners\": [\"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"], \"trades\": [{\"id\": \"a\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"1\", \"px\": \"100.00\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}, {\"id\": \"b\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"1\", \"px\": \"100.01\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}]}",
+   "{\"t\": \"final\", \"px\": \"100.00\"}"
+  ],
+  "expected": {
+   "sweeps": [
+    {
+     "sweep": 1,
+     "reference": "100.00",
+     "close": "100.00",
+     "minted": [
+      "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy"
+     ],
+     "trades": [
+      {
+       "id": "a",
+       "outcome": "settled",
+       "maker_fee": "1.0000",
+       "taker_fee": "1.0000"
+      },
+      {
+       "id": "b",
+       "outcome": "settled",
+       "maker_fee": "1.0001",
+       "taker_fee": "1.0001"
+      }
+     ],
+     "global_price": "100.00"
+    }
+   ],
+   "final": {
+    "S": "100.00",
+    "owners": 2,
+    "fees": "4.0002",
+    "zero_sum": "0.0000",
+    "standings": [
+     {
+      "key": "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy",
+      "score": "-1.990100",
+      "position": "-2",
+      "fees": "2.0001",
+      "places": [
+       1
+      ],
+      "sharing": 1
+     },
+     {
+      "key": "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "score": "-2.010100",
+      "position": "2",
+      "fees": "2.0001",
+      "places": [
+       2
+      ],
+      "sharing": 1
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "vwap-yarim-cift-yukari",
+  "config": {},
+  "lines": [
+   "{\"t\": \"seed\", \"px\": \"100.00\"}",
+   "{\"t\": \"sweep\", \"n\": 1, \"ref\": \"100.00\", \"close\": \"100.00\", \"owners\": [\"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"], \"trades\": [{\"id\": \"a\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"1\", \"px\": \"100.01\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}, {\"id\": \"b\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"1\", \"px\": \"100.02\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}]}",
+   "{\"t\": \"final\", \"px\": \"100.00\"}"
+  ],
+  "expected": {
+   "sweeps": [
+    {
+     "sweep": 1,
+     "reference": "100.00",
+     "close": "100.00",
+     "minted": [
+      "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy"
+     ],
+     "trades": [
+      {
+       "id": "a",
+       "outcome": "settled",
+       "maker_fee": "1.0001",
+       "taker_fee": "1.0001"
+      },
+      {
+       "id": "b",
+       "outcome": "settled",
+       "maker_fee": "1.0002",
+       "taker_fee": "1.0002"
+      }
+     ],
+     "global_price": "100.02"
+    }
+   ],
+   "final": {
+    "S": "100.00",
+    "owners": 2,
+    "fees": "4.0006",
+    "zero_sum": "0.0000",
+    "standings": [
+     {
+      "key": "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy",
+      "score": "-1.970300",
+      "position": "-2",
+      "fees": "2.0003",
+      "places": [
+       1
+      ],
+      "sharing": 1
+     },
+     {
+      "key": "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "score": "-2.030300",
+      "position": "2",
+      "fees": "2.0003",
+      "places": [
+       2
+      ],
+      "sharing": 1
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "bastaki-sifir-ve-bool-until",
+  "config": {},
+  "lines": [
+   "{\"t\": \"seed\", \"px\": \"0100.5\"}",
+   "{\"t\": \"sweep\", \"n\": 1, \"ref\": \"0100.50\", \"close\": \"100.40\", \"owners\": [\"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"], \"trades\": [{\"id\": \"a\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"sell\", \"qty\": \"002\", \"px\": \"0100.45\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}, {\"id\": \"b\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"1\", \"px\": \"100.40\", \"taker\": \"any\", \"until\": true, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}]}",
+   "{\"t\": \"final\", \"px\": \"099.9\"}"
+  ],
+  "expected": {
+   "sweeps": [
+    {
+     "sweep": 1,
+     "reference": "100.50",
+     "close": "100.40",
+     "minted": [
+      "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy"
+     ],
+     "trades": [
+      {
+       "id": "a",
+       "outcome": "settled",
+       "maker_fee": "2.0090",
+       "taker_fee": "2.0090"
+      },
+      {
+       "id": "b",
+       "outcome": "void",
+       "reason": "shape"
+      }
+     ],
+     "global_price": "100.45"
+    }
+   ],
+   "final": {
+    "S": "99.9",
+    "owners": 2,
+    "fees": "4.0180",
+    "zero_sum": "0.0000",
+    "standings": [
+     {
+      "key": "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "score": "-0.909000",
+      "position": "-2",
+      "fees": "2.0090",
+      "places": [
+       1
+      ],
+      "sharing": 1
+     },
+     {
+      "key": "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy",
+      "score": "-3.109000",
+      "position": "2",
+      "fees": "2.0090",
+      "places": [
+       2
+      ],
+      "sharing": 1
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "kilit-siniri",
+  "config": {
+   "lock_sweep": 5
+  },
+  "lines": [
+   "{\"t\": \"seed\", \"px\": \"200.00\"}",
+   "{\"t\": \"sweep\", \"n\": 5, \"ref\": \"200.00\", \"close\": \"200.00\", \"owners\": [\"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"], \"trades\": [{\"id\": \"a\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"1\", \"px\": \"200.00\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}]}",
+   "{\"t\": \"sweep\", \"n\": 6, \"ref\": \"200.00\", \"close\": \"201.00\", \"owners\": [\"did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L\"], \"trades\": [{\"id\": \"b\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"1\", \"px\": \"200.00\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}]}",
+   "{\"t\": \"final\", \"px\": \"210.00\"}"
+  ],
+  "expected": {
+   "sweeps": [
+    {
+     "sweep": 5,
+     "reference": "200.00",
+     "close": "200.00",
+     "minted": [
+      "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy"
+     ],
+     "trades": [
+      {
+       "id": "a",
+       "outcome": "settled",
+       "maker_fee": "2.0000",
+       "taker_fee": "2.0000"
+      }
+     ],
+     "global_price": "200.00"
+    },
+    {
+     "sweep": 6,
+     "reference": "200.00",
+     "close": "201.00",
+     "minted": [],
+     "trades": [
+      {
+       "id": "b",
+       "outcome": "void",
+       "reason": "locked"
+      }
+     ],
+     "global_price": "200.00"
+    }
+   ],
+   "final": {
+    "S": "210.00",
+    "owners": 2,
+    "fees": "4.0000",
+    "zero_sum": "0.0000",
+    "standings": [
+     {
+      "key": "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "score": "8.000000",
+      "position": "1",
+      "fees": "2.0000",
+      "places": [
+       1
+      ],
+      "sharing": 1
+     },
+     {
+      "key": "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy",
+      "score": "-12.000000",
+      "position": "-1",
+      "fees": "2.0000",
+      "places": [
+       2
+      ],
+      "sharing": 1
+     }
+    ]
+   }
+  }
+ },
+ {
+  "name": "kendi-kendine-ve-fifo",
+  "config": {},
+  "lines": [
+   "{\"t\": \"seed\", \"px\": \"50.00\"}",
+   "{\"t\": \"sweep\", \"n\": 1, \"ref\": \"50.00\", \"close\": \"50.00\", \"owners\": [\"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\", \"did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L\"], \"trades\": [{\"id\": \"a\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"10\", \"px\": \"50.00\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}, {\"id\": \"b\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"buy\", \"qty\": \"5\", \"px\": \"51.00\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L\"}, {\"id\": \"c\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"sell\", \"qty\": \"3\", \"px\": \"50.50\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\"}]}",
+   "{\"t\": \"sweep\", \"n\": 2, \"ref\": \"50.00\", \"close\": \"49.00\", \"owners\": [], \"trades\": [{\"id\": \"d\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"sell\", \"qty\": \"12\", \"px\": \"49.50\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}, {\"id\": \"e\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"sell\", \"qty\": \"10\", \"px\": \"49.00\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L\"}]}",
+   "{\"t\": \"sweep\", \"n\": 3, \"ref\": \"49.00\", \"close\": \"48.00\", \"owners\": [], \"trades\": [{\"id\": \"f\", \"maker\": \"did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ\", \"side\": \"sell\", \"qty\": \"3\", \"px\": \"48.00\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L\"}, {\"id\": \"g\", \"maker\": \"did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L\", \"side\": \"buy\", \"qty\": \"4.5\", \"px\": \"48.10\", \"taker\": \"any\", \"until\": 99, \"countersigner\": \"did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy\"}]}",
+   "{\"t\": \"final\", \"px\": \"47.00\"}"
+  ],
+  "expected": {
+   "sweeps": [
+    {
+     "sweep": 1,
+     "reference": "50.00",
+     "close": "50.00",
+     "minted": [
+      "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy",
+      "did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L"
+     ],
+     "trades": [
+      {
+       "id": "a",
+       "outcome": "settled",
+       "maker_fee": "5.0000",
+       "taker_fee": "5.0000"
+      },
+      {
+       "id": "b",
+       "outcome": "settled",
+       "maker_fee": "2.5500",
+       "taker_fee": "5.00"
+      },
+      {
+       "id": "c",
+       "outcome": "settled",
+       "maker_fee": "1.5150",
+       "taker_fee": "1.5150"
+      }
+     ],
+     "global_price": "50.36"
+    },
+    {
+     "sweep": 2,
+     "reference": "50.00",
+     "close": "49.00",
+     "minted": [],
+     "trades": [
+      {
+       "id": "d",
+       "outcome": "settled",
+       "maker_fee": "6.00",
+       "taker_fee": "5.9400"
+      },
+      {
+       "id": "e",
+       "outcome": "settled",
+       "maker_fee": "4.9000",
+       "taker_fee": "4.9000"
+      }
+     ],
+     "global_price": "49.27"
+    },
+    {
+     "sweep": 3,
+     "reference": "49.00",
+     "close": "48.00",
+     "minted": [],
+     "trades": [
+      {
+       "id": "f",
+       "outcome": "settled",
+       "maker_fee": "1.4400",
+       "taker_fee": "1.4400"
+      },
+      {
+       "id": "g",
+       "outcome": "settled",
+       "maker_fee": "2.16450",
+       "taker_fee": "2.16450"
+      }
+     ],
+     "global_price": "48.06"
+    }
+   ],
+   "final": {
+    "S": "47.00",
+    "owners": 3,
+    "fees": "49.52900",
+    "zero_sum": "0.00000",
+    "standings": [
+     {
+      "key": "did:key:z6MkrBwx3NBDGJHyHjxNPFJ1Mwrhhztn4sBbrBwx3NBDGJHy",
+      "score": "-8.154500",
+      "position": "-2.5",
+      "fees": "13.10450",
+      "places": [
+       1
+      ],
+      "sharing": 1
+     },
+     {
+      "key": "did:key:z6MkvENmGn6G3qgJCq7GGaXnkimub8BdKt5XvENmGn6G3qgJ",
+      "score": "-19.920000",
+      "position": "-10",
+      "fees": "22.9200",
+      "places": [
+       2
+      ],
+      "sharing": 1
+     },
+     {
+      "key": "did:key:z6Mk6zgNFxAi719LMyXWNGEDMJFJmT2561cA6zgNFxAi719L",
+      "score": "-21.454500",
+      "position": "12.5",
+      "fees": "13.50450",
+      "places": [
+       3
+      ],
+      "sharing": 1
+     }
+    ]
+   }
+  }
+ }
+]

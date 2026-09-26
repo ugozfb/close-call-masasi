@@ -1,0 +1,21 @@
+<!doctype html><meta charset="utf-8"><title>core smoke</title>
+<script type="module">
+import * as C from "../../src/core.mjs";
+const out = {};
+try {
+  const V = await (await fetch("../vectors/core.json")).json();
+  const k = V.keys[0];
+  const s = await C.importSigner({ warning: "x", did: k.did, privateKeyJwk: k.jwk });
+  out.did_ok = s.did === k.did;
+  out.sig_same = (await s.sign(k.signatures[0].message)) === k.signatures[0].sig;
+  const [o] = C.extractOffers("close1", [V.offers[0].record]);
+  out.offer_verified = await C.verifyOffer(o);
+  const [t] = C.extractTrades("close1", [V.trades[0].record]);
+  out.trade_verified = await C.verifyTrade(t);
+  const big = V.owners_big_nonce[0];
+  out.big_nonce_room = await C.verifyRoomRecord("close1", big);
+  out.referee = await C.verifyRefereeRecord(V.referee[0].room, V.referee[0].record);
+  out.canon_same = C.canonicalTerms(o.terms) === V.offers[0].canonical;
+} catch (e) { out.error = String(e && e.stack || e); }
+document.title = "done"; window.__out = out;
+</script>

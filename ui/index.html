@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; connect-src 'self' https://technocore.chat; img-src 'self' data:; style-src 'self'; script-src 'self'; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <meta name="referrer" content="no-referrer">
+  <title>Close Call Masası</title>
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="app.mjs"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" aria-hidden="true">CC</div>
+      <div>
+        <div class="brand-title" data-i18n="brand.title">Close Call Masası</div>
+        <div class="brand-sub" data-i18n="brand.sub">xyz:NVDA · close-1 · topluluk aracı</div>
+      </div>
+    </div>
+    <div class="stats" id="stats" aria-live="polite"></div>
+    <span class="conn" id="conn"><span class="dot"></span></span>
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Dil / Language">
+      <button type="button" data-lang="tr">TR</button>
+      <button type="button" data-lang="en">EN</button>
+    </div>
+    <button class="id-chip" id="idChip" type="button"></button>
+  </header>
+
+  <main class="layout">
+    <section class="panel book" data-i18n-label="book.title">
+      <div class="panel-head">
+        <span class="panel-title" data-i18n="book.title">Emir defteri</span>
+        <span class="small muted" id="bookMeta"></span>
+      </div>
+      <div class="book-cols"><span data-i18n="col.price">Fiyat</span><span data-i18n="col.qty">Miktar</span><span data-i18n="col.count">Adet</span></div>
+      <div id="book" class="lvls"></div>
+      <div class="book-foot" id="bookFoot"></div>
+    </section>
+
+    <section class="panel chart" data-i18n-label="chart.title">
+      <div class="panel-head">
+        <span class="panel-title" data-i18n="chart.title">Hakem referansı ve ±%5 bant</span>
+        <span class="legend">
+          <span><span class="swatch sw-ref"></span><span data-i18n="legend.ref">Referans</span></span>
+          <span><span class="swatch sw-band"></span><span data-i18n="legend.band">İşlem bandı</span></span>
+          <span><span class="swatch sw-buy"></span><span data-i18n="legend.buy">Alışlarım</span></span>
+          <span><span class="swatch sw-sell"></span><span data-i18n="legend.sell">Satışlarım</span></span>
+        </span>
+      </div>
+      <div class="chart-wrap" id="chart"></div>
+    </section>
+
+    <section class="panel rival" data-i18n-label="rival.title">
+      <div class="panel-head">
+        <span class="panel-title" data-i18n="rival.title">Açık miktar ve pozisyon taşıyan anahtar sayısı</span>
+        <span class="small muted" data-i18n="rival.note">değişimler nettir; yeni giriş sayısı değildir</span>
+      </div>
+      <div class="panel-body" id="rival"></div>
+    </section>
+
+    <section class="panel ticket" data-i18n-label="ticket.title">
+      <div class="panel-head">
+        <span class="panel-title" data-i18n="ticket.title">Teklif ver</span>
+        <span class="small muted" id="ticketMeta"></span>
+      </div>
+      <div class="panel-body" id="ticket"></div>
+    </section>
+
+    <section class="panel tabs" data-i18n-label="tabs.label">
+      <div class="tabbar" id="tabbar"></div>
+      <div id="tabBody"></div>
+    </section>
+  </main>
+
+  <footer>
+    <span><span data-i18n="foot.notOfficial">Resmî FLOP Labs ürünü değildir. Kurallar:</span> <a href="https://github.com/flop-labs/technocore-close-call-challenge" target="_blank" rel="noopener noreferrer">flop-labs/technocore-close-call-challenge</a></span>
+    <span id="footVer"></span>
+  </footer>
+
+  <dialog id="dlg"></dialog>
+  <div class="toasts" id="toasts" aria-live="polite"></div>
+</body>
+</html>

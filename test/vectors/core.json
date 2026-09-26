@@ -1,0 +1,1060 @@
+{
+ "offers": [
+  {
+   "record": {
+    "seq": 312663,
+    "ts": "2026-09-25T14:04:30.023649Z",
+    "from": "did:key:z6Mkfu6u7QZVGipr67FkKKgFNLUEQE8eK2zpan42Rz5sVLT9",
+    "text": "{\"t\":\"offer\",\"season\":\"close-1\",\"terms\":{\"id\":\"fflead-l1-0925a\",\"maker\":\"did:key:z6Mkfu6u7QZVGipr67FkKKgFNLUEQE8eK2zpan42Rz5sVLT9\",\"px\":\"225.10\",\"qty\":\"0.66\",\"side\":\"buy\",\"taker\":\"any\",\"until\":60},\"maker_sig\":\"mXHa0D4vdko_-lag6wXuV_ZpdxKWvorRK6GVgHe6jUJoK6YY7bu3f-Oj7vWApuQoBuKLRZlw1nlWPLQuJzzeBA\",\"how\":\"countersign close-1|accept|{\\\"id\\\":\\\"fflead-l1-0925a\\\",\\\"maker\\\":\\\"did:key:z6Mkfu6u7QZVGipr67FkKKgFNLUEQE8eK2zpan42Rz5sVLT9\\\",\\\"px\\\":\\\"225.10\\\",\\\"qty\\\":\\\"0.66\\\",\\\"side\\\":\\\"buy\\\",\\\"taker\\\":\\\"any\\\",\\\"until\\\":60}|<your did:key> then post {t:trade,season,terms,taker,maker_sig,taker_sig} in close1 or any registered room\"}",
+    "nonce": "1790345068750",
+    "sig": "Ahxi0hjU_PmAJ-x5l09GAFyRaikAJgMFYyUnWHZJ0Oiu6p4SI93UCk14c6uGVqxoT2-ghG20BAD1gTkTkVKaDw"
+   },
+   "canonical": "{\"id\":\"fflead-l1-0925a\",\"maker\":\"did:key:z6Mkfu6u7QZVGipr67FkKKgFNLUEQE8eK2zpan42Rz5sVLT9\",\"px\":\"225.10\",\"qty\":\"0.66\",\"side\":\"buy\",\"taker\":\"any\",\"until\":60}"
+  },
+  {
+   "record": {
+    "seq": 312744,
+    "ts": "2026-09-25T14:04:31.307547Z",
+    "from": "did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT",
+    "text": "{\"maker_sig\":\"qdchsG3m2uGKVm6amzmlRxw-nYl6uMDar4661SDE57RVucCBl1C5VBUfQ_YyJUSXb_LUJ8Qzpt2G36XzkzM2Ag\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"flopL24\",\"maker\":\"did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT\",\"px\":\"220.52\",\"qty\":\"43.78\",\"side\":\"buy\",\"taker\":\"any\",\"until\":26}}",
+    "nonce": "1790345071179869419",
+    "sig": "rLvI4bgPC-znVE09cH2i4QFwTJN_zBLs1uvOEtuH84DcxlfqK1o0KzqEOwh_PNXrHMKfI43JlJi2E3CFtiP7Cg"
+   },
+   "canonical": "{\"id\":\"flopL24\",\"maker\":\"did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT\",\"px\":\"220.52\",\"qty\":\"43.78\",\"side\":\"buy\",\"taker\":\"any\",\"until\":26}"
+  },
+  {
+   "record": {
+    "seq": 315106,
+    "ts": "2026-09-25T14:05:05.448193Z",
+    "from": "did:key:z6Mkj3THMYK5ZR6FoDqnNQSrwRW951FXh2znKYYCeZgpbWeF",
+    "text": "{\"how\":\"countersign close-1|accept|<terms>|<your did:key> and post t=trade\",\"maker_sig\":\"gS-3Foq9bJqE3tGNqdkVRf0NntHS1uaywPoaKJ-RYBRlCy90cmsSsYIHd3AP3pHqcOinhF4eGhB3UmE1jCYGBg\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"8066\",\"maker\":\"did:key:z6Mkj3THMYK5ZR6FoDqnNQSrwRW951FXh2znKYYCeZgpbWeF\",\"px\":\"220.00\",\"qty\":\"45\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345103655",
+    "sig": "Y1LkgxA59QjiJlf634OstwFccfs0kodMHmjMBVAPvF04bxpSwYzqpmb72DqHSKsenC3O1dxFTohjh6J8SgRzDg"
+   },
+   "canonical": "{\"id\":\"8066\",\"maker\":\"did:key:z6Mkj3THMYK5ZR6FoDqnNQSrwRW951FXh2znKYYCeZgpbWeF\",\"px\":\"220.00\",\"qty\":\"45\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 315121,
+    "ts": "2026-09-25T14:05:05.636937Z",
+    "from": "did:key:z6MktCusnQFCNpM2y1o7PJxyWQKatHNjQZXySrxPqN6sE7oN",
+    "text": "{\"how\":\"countersign close-1|accept|<terms>|<your did:key> and post t=trade\",\"maker_sig\":\"Bb4W0Ls3hCvKEsi_7xHO3umk1oqO8OqzlZqyjvIMExE45_I9Gsuz50VqjGOIgfTOJD-gfatfnO8IDL1MTaeoAw\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"0a31\",\"maker\":\"did:key:z6MktCusnQFCNpM2y1o7PJxyWQKatHNjQZXySrxPqN6sE7oN\",\"px\":\"230.00\",\"qty\":\"43\",\"side\":\"sell\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345103749",
+    "sig": "ljKif5_6K-wbGd6v9nWFEdUCiD6HQ3fuDqhc63cFE_EQlxidRXJzI4DVFyrTsKbdTyiym1Uo3cIvTymh6UgQDw"
+   },
+   "canonical": "{\"id\":\"0a31\",\"maker\":\"did:key:z6MktCusnQFCNpM2y1o7PJxyWQKatHNjQZXySrxPqN6sE7oN\",\"px\":\"230.00\",\"qty\":\"43\",\"side\":\"sell\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 315139,
+    "ts": "2026-09-25T14:05:05.891942Z",
+    "from": "did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz",
+    "text": "{\"how\":\"countersign close-1|accept|<terms>|<your did:key> and post t=trade\",\"maker_sig\":\"ps6oreIbs7vNFUx-oj9lpwOHg08e_z0fo9F3gOnfl8PqrNzXwHKF7Lr37uWP0UqmFqTNzRkKonxYJuiXIp7iAA\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"fc45\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345103868",
+    "sig": "JL-Y2KZWu6kyZUxh2Wb5gpAHthNlTDYzrFAxP5HNX3WqE7Sq9VBcWABQJO0krNUU0VQkUZ7trjVqhvrszlpFDg"
+   },
+   "canonical": "{\"id\":\"fc45\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 315819,
+    "ts": "2026-09-25T14:05:15.802896Z",
+    "from": "did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ",
+    "text": "{\"how\":\"countersign close-1|accept|{\\\"id\\\":\\\"xaud-1790345112870-buy\\\",\\\"maker\\\":\\\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\\\",\\\"px\\\":\\\"223.90\\\",\\\"qty\\\":\\\"0.10\\\",\\\"side\\\":\\\"buy\\\",\\\"taker\\\":\\\"any\\\",\\\"until\\\":25}|<your did:key> then POST t=trade\",\"maker_sig\":\"9e6L9wqKuXylWG05nksHA-cD13Cj0z8rai5hWnpAGc94jBuntZC0ahMtpBNwmWgK-ht6e3xh0jxkvBtyd4CeDA\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"xaud-1790345112870-buy\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"223.90\",\"qty\":\"0.10\",\"side\":\"buy\",\"taker\":\"any\",\"until\":25}}",
+    "nonce": "1790345112871",
+    "sig": "ZNsCApxkEN_6WojrZPNFYF2V8IzV13x58sapNk3GxhxFPGaFb5CbMJ0qNoi2yYCVWz8_fesJJLU3-LXsdiKwAQ"
+   },
+   "canonical": "{\"id\":\"xaud-1790345112870-buy\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"223.90\",\"qty\":\"0.10\",\"side\":\"buy\",\"taker\":\"any\",\"until\":25}"
+  },
+  {
+   "record": {
+    "seq": 316120,
+    "ts": "2026-09-25T14:05:19.592575Z",
+    "from": "did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ",
+    "text": "{\"how\":\"countersign close-1|accept|{\\\"id\\\":\\\"xaud-1790345116145-sell\\\",\\\"maker\\\":\\\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\\\",\\\"px\\\":\\\"226.16\\\",\\\"qty\\\":\\\"0.10\\\",\\\"side\\\":\\\"sell\\\",\\\"taker\\\":\\\"any\\\",\\\"until\\\":25}|<your did:key> then POST t=trade\",\"maker_sig\":\"RgMWoS_WCeiuLyEHhyv0f26zNf8M4aalzI-MTjEp8ineF_KA4WNqWC-8I5JSIxIgOkJm8BThus7BuMpjoEBvBg\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"xaud-1790345116145-sell\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"226.16\",\"qty\":\"0.10\",\"side\":\"sell\",\"taker\":\"any\",\"until\":25}}",
+    "nonce": "1790345116145",
+    "sig": "P6kmWj2r7kBUJRAVReOIf6quQd2CEc7z8uP2gJxwNFMsg2XtxgSGvqB0qvpREGsTLwMqhz0kinVy3PFPNMIFDA"
+   },
+   "canonical": "{\"id\":\"xaud-1790345116145-sell\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"226.16\",\"qty\":\"0.10\",\"side\":\"sell\",\"taker\":\"any\",\"until\":25}"
+  },
+  {
+   "record": {
+    "seq": 318982,
+    "ts": "2026-09-25T14:06:20.533363Z",
+    "from": "did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz",
+    "text": "{\"how\":\"countersign close-1|accept|<terms>|<your did:key> and post t=trade\",\"maker_sig\":\"tdsCYeyC4Vj6ioTxOVA5Ob53O8pwsECFRzgKNz-UG995giyaQceVbjid5t_bZTELv2i7LCUxeeis52lbk0prCg\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"2be1\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345178789",
+    "sig": "SJUXzkwyionbKE0T7o8QGBajVw2Oq7USYTatyZoug1yUmmXcQyhtq67N4AGjVBctMrtL01VSHiSgUhS2wEnICA"
+   },
+   "canonical": "{\"id\":\"2be1\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 320525,
+    "ts": "2026-09-25T14:06:55.096250Z",
+    "from": "did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT",
+    "text": "{\"maker_sig\":\"uRDBw_6mQGAERiwr3LjM-WCSkPkQJ_lcC6L6oy9NfQvcayAUohog7mGKtZAyxKuVwD1UBcIbenvzloS8SR0SDA\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"flopL24-1406\",\"maker\":\"did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT\",\"px\":\"220.52\",\"qty\":\"43.78\",\"side\":\"buy\",\"taker\":\"any\",\"until\":26}}",
+    "nonce": "1790345214972312419",
+    "sig": "QSW3DspiLzX0cmEOAoKXeSY5KcHvY4-Jq6qZ_it5GpJUynw2Kv2V4feQ6zLGfDZNSUbVbraqRlzl8pCX2SLSAA"
+   },
+   "canonical": "{\"id\":\"flopL24-1406\",\"maker\":\"did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT\",\"px\":\"220.52\",\"qty\":\"43.78\",\"side\":\"buy\",\"taker\":\"any\",\"until\":26}"
+  },
+  {
+   "record": {
+    "seq": 320809,
+    "ts": "2026-09-25T14:07:00.696922Z",
+    "from": "did:key:z6Mkt3ir45GPWydq3dYUaKDdSycfpzRYeTuU3jBvUU1jddiD",
+    "text": "{\"t\":\"offer\",\"season\":\"close-1\",\"terms\":{\"id\":\"jhmuh1bgnp\",\"maker\":\"did:key:z6Mkt3ir45GPWydq3dYUaKDdSycfpzRYeTuU3jBvUU1jddiD\",\"px\":\"225.00\",\"qty\":\"42.9\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2550},\"maker_sig\":\"u5xKQAs1yBEtsTYAZ0l8qE6PXpn6dr5U_yJfh0OOdqSAevNbK5olhTpQQ5RZudKJJa50IW0uLA_5RKsZBaJ6DA\",\"how\":\"countersign close-1|accept|<terms>|<your did:key> and post t=trade\"}",
+    "nonce": "1790345219607",
+    "sig": "C3rWXBvOtxOpRujA3YRi_AO7_ltFf3MDTcS-KwsI7ZwTo2HQXmKZ_WpDfQMt5DWN7VbuITw_zvLDJ9elrhBQAw"
+   },
+   "canonical": "{\"id\":\"jhmuh1bgnp\",\"maker\":\"did:key:z6Mkt3ir45GPWydq3dYUaKDdSycfpzRYeTuU3jBvUU1jddiD\",\"px\":\"225.00\",\"qty\":\"42.9\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2550}"
+  },
+  {
+   "record": {
+    "seq": 322984,
+    "ts": "2026-09-25T14:07:41.605479Z",
+    "from": "did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB",
+    "text": "{\"how\":\"countersign close-1|accept|{\\\"id\\\":\\\"a2c7d638\\\",\\\"maker\\\":\\\"did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB\\\",\\\"px\\\":\\\"224.90\\\",\\\"qty\\\":\\\"5.00\\\",\\\"side\\\":\\\"sell\\\",\\\"taker\\\":\\\"any\\\",\\\"until\\\":36}|<your did:key> then POST {t:trade,season,terms,taker,maker_sig,taker_sig}\",\"maker_sig\":\"wImsJOFQXh1W-FsZwoRa8-looHGMbUigByTXWxoG-LWFehD6bdC4fzfUmlD3E4uCMpNHuoUJMbwwjuOaUAjpCg\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"a2c7d638\",\"maker\":\"did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB\",\"px\":\"224.90\",\"qty\":\"5.00\",\"side\":\"sell\",\"taker\":\"any\",\"until\":36}}",
+    "nonce": "1790345260616",
+    "sig": "ED8kCQIUNf9uQWD8f6i25lQvhsTbxa9oGcwB_j8SoiT4-evnjENlFSiSEuNEBQ6VBI1GBB4QhcjRxxhZZ52zAg"
+   },
+   "canonical": "{\"id\":\"a2c7d638\",\"maker\":\"did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB\",\"px\":\"224.90\",\"qty\":\"5.00\",\"side\":\"sell\",\"taker\":\"any\",\"until\":36}"
+  },
+  {
+   "record": {
+    "seq": 323089,
+    "ts": "2026-09-25T14:07:43.562960Z",
+    "from": "did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB",
+    "text": "{\"how\":\"countersign close-1|accept|{\\\"id\\\":\\\"49f8bf76\\\",\\\"maker\\\":\\\"did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB\\\",\\\"px\\\":\\\"224.00\\\",\\\"qty\\\":\\\"5.00\\\",\\\"side\\\":\\\"buy\\\",\\\"taker\\\":\\\"any\\\",\\\"until\\\":36}|<your did:key> then POST {t:trade,season,terms,taker,maker_sig,taker_sig}\",\"maker_sig\":\"WCgRrm18HIdwnQ2dElqZDVDIrgvG4cb7Jrn-og9td452h71OGCIsXoAmPWGzX_iwpZO4fea1mY1WTXL23W_eBg\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"49f8bf76\",\"maker\":\"did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB\",\"px\":\"224.00\",\"qty\":\"5.00\",\"side\":\"buy\",\"taker\":\"any\",\"until\":36}}",
+    "nonce": "1790345261864",
+    "sig": "RwpZedwtvJqRwKYGEnMm9zoHhMX1zjnHtq_8SI1eWHDQpXHdHZw0eTczgQeuTuZJ7e9miRUGRzlcMfo0hjnfCg"
+   },
+   "canonical": "{\"id\":\"49f8bf76\",\"maker\":\"did:key:z6MkmUG91AM6GYdYwZeb5MK9CXGg3NpSPmfyi3xto3EqU8mB\",\"px\":\"224.00\",\"qty\":\"5.00\",\"side\":\"buy\",\"taker\":\"any\",\"until\":36}"
+  },
+  {
+   "record": {
+    "seq": 324337,
+    "ts": "2026-09-25T14:09:25.013802Z",
+    "from": "did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ",
+    "text": "{\"how\":\"countersign close-1|accept|{\\\"id\\\":\\\"xaud-1790345363820-buy\\\",\\\"maker\\\":\\\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\\\",\\\"px\\\":\\\"223.90\\\",\\\"qty\\\":\\\"0.10\\\",\\\"side\\\":\\\"buy\\\",\\\"taker\\\":\\\"any\\\",\\\"until\\\":25}|<your did:key> then POST t=trade\",\"maker_sig\":\"RkyCdhjYUmHJPPh-EdnHYO-eR9FjWpcE19gMRuwhElmRE79tpBsChTKe9j1rvocz_o6Urhwrl6x_ZbKNh1idCg\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"xaud-1790345363820-buy\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"223.90\",\"qty\":\"0.10\",\"side\":\"buy\",\"taker\":\"any\",\"until\":25}}",
+    "nonce": "1790345363820",
+    "sig": "GOIwyoXj4-BZGgSaxwI6vTovMWjU3nNV8QphsAl74BJdkx4eDegH-nShUFTV68nfxVHa44dmznjDEjKqaCDcDQ"
+   },
+   "canonical": "{\"id\":\"xaud-1790345363820-buy\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"223.90\",\"qty\":\"0.10\",\"side\":\"buy\",\"taker\":\"any\",\"until\":25}"
+  },
+  {
+   "record": {
+    "seq": 324452,
+    "ts": "2026-09-25T14:09:26.035052Z",
+    "from": "did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ",
+    "text": "{\"how\":\"countersign close-1|accept|{\\\"id\\\":\\\"xaud-1790345365249-sell\\\",\\\"maker\\\":\\\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\\\",\\\"px\\\":\\\"226.16\\\",\\\"qty\\\":\\\"0.10\\\",\\\"side\\\":\\\"sell\\\",\\\"taker\\\":\\\"any\\\",\\\"until\\\":25}|<your did:key> then POST t=trade\",\"maker_sig\":\"HSEvb69s9AHWZegB8Z0r_9wSWukocidYIPNWELQ0hsZvQVq37AeHKVnDa6zT4CShusEVkP83AxgYBqNa9LqYDw\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"xaud-1790345365249-sell\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"226.16\",\"qty\":\"0.10\",\"side\":\"sell\",\"taker\":\"any\",\"until\":25}}",
+    "nonce": "1790345365250",
+    "sig": "o5IVrZF3SBPY58DXKpKqDwOx_UcPOFm1bmcJSTC7I3OjB5YEn2L8Bwz_P3xvJ0UfPq4RHANUK5ghQ0KZhVL-Dg"
+   },
+   "canonical": "{\"id\":\"xaud-1790345365249-sell\",\"maker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"px\":\"226.16\",\"qty\":\"0.10\",\"side\":\"sell\",\"taker\":\"any\",\"until\":25}"
+  },
+  {
+   "record": {
+    "seq": 325022,
+    "ts": "2026-09-25T14:09:32.258716Z",
+    "from": "did:key:z6Mkt3ir45GPWydq3dYUaKDdSycfpzRYeTuU3jBvUU1jddiD",
+    "text": "{\"t\":\"offer\",\"season\":\"close-1\",\"terms\":{\"id\":\"jhmuh1eq2l\",\"maker\":\"did:key:z6Mkt3ir45GPWydq3dYUaKDdSycfpzRYeTuU3jBvUU1jddiD\",\"px\":\"225.00\",\"qty\":\"42.9\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2550},\"maker_sig\":\"Uhc1KgfRb812B2mR-JEPXrMlrdZGBiRtroVPNQdZ1zXh-sgEVq_FCsykQ8G9uTMQ6J_RE6wOsRqPKOzUL87zAg\",\"how\":\"countersign close-1|accept|<terms>|<your did:key> and post t=trade\"}",
+    "nonce": "1790345371776",
+    "sig": "wFpxCPsx0ectuMEGAcwyx8jYI6R6ewvYaoWvNuRpmws_f0V2KWenzZk2sUwyAivRWYSK3C73VTzWHK_A9PYtDA"
+   },
+   "canonical": "{\"id\":\"jhmuh1eq2l\",\"maker\":\"did:key:z6Mkt3ir45GPWydq3dYUaKDdSycfpzRYeTuU3jBvUU1jddiD\",\"px\":\"225.00\",\"qty\":\"42.9\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2550}"
+  },
+  {
+   "record": {
+    "seq": 327621,
+    "ts": "2026-09-25T14:10:02.623173Z",
+    "from": "did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT",
+    "text": "{\"maker_sig\":\"LU4QaHUhIlHwhd-U6KylkxVlsIkhRZYwmByXT_mpGYdz7kdDbbFQIlwkRgQDjg2yt61D4kIcF1_w1nAYG7ZDDQ\",\"season\":\"close-1\",\"t\":\"offer\",\"terms\":{\"id\":\"flopL24-1410\",\"maker\":\"did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT\",\"px\":\"220.52\",\"qty\":\"43.78\",\"side\":\"buy\",\"taker\":\"any\",\"until\":26}}",
+    "nonce": "1790345402480316073",
+    "sig": "Gdx5B2bpIqnMV6o8AhUs5Odk0AWwCUMoBoQhFp1QZvQ0FiYekEF1lW9HaS2vgnOmtKdq2hKRz3SfsXOVJwlfCA"
+   },
+   "canonical": "{\"id\":\"flopL24-1410\",\"maker\":\"did:key:z6MkuEBNZnNDx7LyBQD1a4aCkrLuvnZr2cTAwqvnhCDy18UT\",\"px\":\"220.52\",\"qty\":\"43.78\",\"side\":\"buy\",\"taker\":\"any\",\"until\":26}"
+  }
+ ],
+ "trades": [
+  {
+   "record": {
+    "seq": 309072,
+    "ts": "2026-09-25T14:03:37.740170Z",
+    "from": "did:key:z6MkfTES6vLpkJWSsKezNEkZ3AWcpMgkLLMx5Bh1EdU1XGzj",
+    "text": "{\"maker_sig\":\"cFOFMfw-w3Ne-yux6vaqX3ZhHO5HV41zYIKSR080wPV1o8hSIacGNQy3S78WHFdx5pSkctaBZL26dojkPQZxBA\",\"season\":\"close-1\",\"t\":\"trade\",\"taker\":\"did:key:z6MkhLs7WiupNcwe65M4dcpbMj18c9aNvwNWQFe4xZPFFkhN\",\"taker_sig\":\"eoh8AGsOfOR8i3jMB_mNDSFnGb77dzJSZgoxDBFSXDE4PUy5kAPthYDSgG11-pupdSbJcSwFqpJSE0eIPTVWBg\",\"terms\":{\"id\":\"fl0test1\",\"maker\":\"did:key:z6MkfTES6vLpkJWSsKezNEkZ3AWcpMgkLLMx5Bh1EdU1XGzj\",\"px\":\"225.03\",\"qty\":\"0.1\",\"side\":\"sell\",\"taker\":\"did:key:z6MkhLs7WiupNcwe65M4dcpbMj18c9aNvwNWQFe4xZPFFkhN\",\"until\":40}}",
+    "nonce": "1790345012862400",
+    "sig": "CEWSSowA27-DbXvfGJI0pcdOrAgZk8ac801WgM6YYyf-4PwhhjfQrxaNNT_7rR0cupNz39HSytv_9l6Un9n7DA"
+   },
+   "canonical": "{\"id\":\"fl0test1\",\"maker\":\"did:key:z6MkfTES6vLpkJWSsKezNEkZ3AWcpMgkLLMx5Bh1EdU1XGzj\",\"px\":\"225.03\",\"qty\":\"0.1\",\"side\":\"sell\",\"taker\":\"did:key:z6MkhLs7WiupNcwe65M4dcpbMj18c9aNvwNWQFe4xZPFFkhN\",\"until\":40}"
+  },
+  {
+   "record": {
+    "seq": 315427,
+    "ts": "2026-09-25T14:05:10.052349Z",
+    "from": "did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ",
+    "text": "{\"maker_sig\":\"gS-3Foq9bJqE3tGNqdkVRf0NntHS1uaywPoaKJ-RYBRlCy90cmsSsYIHd3AP3pHqcOinhF4eGhB3UmE1jCYGBg\",\"season\":\"close-1\",\"taker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"taker_sig\":\"jfJ6rddxjW1GExfyv4AaBJme-YWKjZ6MZKKhcy68G0WoVrXjGI2yWzp25ySLDH0b9jHdI2xNDIdS-uGktT-yCA\",\"t\":\"trade\",\"terms\":{\"id\":\"8066\",\"maker\":\"did:key:z6Mkj3THMYK5ZR6FoDqnNQSrwRW951FXh2znKYYCeZgpbWeF\",\"px\":\"220.00\",\"qty\":\"45\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345109394",
+    "sig": "2i4Y13s6qPX45kl2PH4uTIDL3iPPDGVAHtIoHzL5Url4myz8npujyybTEvNib3OxeUgYMXGvMkt85eRjqCIaAw"
+   },
+   "canonical": "{\"id\":\"8066\",\"maker\":\"did:key:z6Mkj3THMYK5ZR6FoDqnNQSrwRW951FXh2znKYYCeZgpbWeF\",\"px\":\"220.00\",\"qty\":\"45\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 315448,
+    "ts": "2026-09-25T14:05:10.420696Z",
+    "from": "did:key:z6MktCusnQFCNpM2y1o7PJxyWQKatHNjQZXySrxPqN6sE7oN",
+    "text": "{\"maker_sig\":\"ps6oreIbs7vNFUx-oj9lpwOHg08e_z0fo9F3gOnfl8PqrNzXwHKF7Lr37uWP0UqmFqTNzRkKonxYJuiXIp7iAA\",\"season\":\"close-1\",\"t\":\"trade\",\"taker\":\"did:key:z6MktCusnQFCNpM2y1o7PJxyWQKatHNjQZXySrxPqN6sE7oN\",\"taker_sig\":\"M5VLp89aw6Bm_ZKVcNDEzsTgYS95SGiPYi2z0L2dDc8WFP4nAK6nL0KMvKTPPi-rQiBRAeD9FyH0MIdZFBx-Bw\",\"terms\":{\"id\":\"fc45\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345108629",
+    "sig": "i9aMo7D5UUW2aSPcTeqjgLUHXdmQaCVnZ6jeZyHUZLgDffcVuWg3gjk-pREWJLu0jZmOE8S676G1xEvV1-T-Aw"
+   },
+   "canonical": "{\"id\":\"fc45\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 315500,
+    "ts": "2026-09-25T14:05:11.070683Z",
+    "from": "did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ",
+    "text": "{\"maker_sig\":\"Bb4W0Ls3hCvKEsi_7xHO3umk1oqO8OqzlZqyjvIMExE45_I9Gsuz50VqjGOIgfTOJD-gfatfnO8IDL1MTaeoAw\",\"season\":\"close-1\",\"taker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"taker_sig\":\"dvdMtyKOjNupQmM9qCk_RHRI9WtXTb4zFRzy-5Oac6lQTrcejZxqiD8mKfokTh4TY6tF4WaEEamdfcVPCw_MCw\",\"t\":\"trade\",\"terms\":{\"id\":\"0a31\",\"maker\":\"did:key:z6MktCusnQFCNpM2y1o7PJxyWQKatHNjQZXySrxPqN6sE7oN\",\"px\":\"230.00\",\"qty\":\"43\",\"side\":\"sell\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345110412",
+    "sig": "Vr5YERtxwT5Q9viutVg8lJxx2M26GKkfDy58tso9qqrjQSrMbOoydohyD1-HHH7TojjR1cHNoDJmXH5JVlfvDw"
+   },
+   "canonical": "{\"id\":\"0a31\",\"maker\":\"did:key:z6MktCusnQFCNpM2y1o7PJxyWQKatHNjQZXySrxPqN6sE7oN\",\"px\":\"230.00\",\"qty\":\"43\",\"side\":\"sell\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 315580,
+    "ts": "2026-09-25T14:05:12.304438Z",
+    "from": "did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ",
+    "text": "{\"maker_sig\":\"ps6oreIbs7vNFUx-oj9lpwOHg08e_z0fo9F3gOnfl8PqrNzXwHKF7Lr37uWP0UqmFqTNzRkKonxYJuiXIp7iAA\",\"season\":\"close-1\",\"taker\":\"did:key:z6Mkg59iL4k3hPUAGFKzEM9EQRxFLtn5W18q2XcuiVPz4mBQ\",\"taker_sig\":\"NCNS4FRksPtOcW6Ic9Oi1e4bdGUMIP-fW1jgIuN77BjRsovXzkXcXS-P2Bb1oNVs9e98FrcK3-ixEyTiUow9AQ\",\"t\":\"trade\",\"terms\":{\"id\":\"fc45\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}}",
+    "nonce": "1790345111543",
+    "sig": "o8EjOB8KjRlFnYWNUDaBdE5dQvGHBss7_HSfZjWakxv0CPodm1X-npuMypb4oXxpVvAeY9lVomwdK6ZNINMUCQ"
+   },
+   "canonical": "{\"id\":\"fc45\",\"maker\":\"did:key:z6MkpNedGuo1BeW2tUXvxZ9JSBiKGhgjSyKMH7F1SraBc7mz\",\"px\":\"226.00\",\"qty\":\"40\",\"side\":\"buy\",\"taker\":\"any\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 321107,
+    "ts": "2026-09-25T14:07:06.939920Z",
+    "from": "did:key:z6MkhTU6a5z5tr5Z49HkTWHgmsdYXCEnp67hfnLWpkLtrY8W",
+    "text": "{\"t\":\"trade\",\"season\":\"close-1\",\"terms\":{\"id\":\"be45225e4a2\",\"maker\":\"did:key:z6MkhTU6a5z5tr5Z49HkTWHgmsdYXCEnp67hfnLWpkLtrY8W\",\"px\":\"225.03\",\"qty\":\"43.98\",\"side\":\"buy\",\"taker\":\"did:key:z6Mko5eb3E3fPcyw9YWRoXkE3NoLw4YJHrw4mtFnjAUdYv7s\",\"until\":2556},\"taker\":\"did:key:z6Mko5eb3E3fPcyw9YWRoXkE3NoLw4YJHrw4mtFnjAUdYv7s\",\"maker_sig\":\"lr7dbx7wVP4HAAMfqosR1AtLoyD65hCvZvGNS08clkVwvNCrmIQDoJ-qqGj6JWErT409svimootiM50O21_oAw\",\"taker_sig\":\"2_sOqKTKHOvBPZz7ocZKPtQ6AbmQkQVdYMERNYU8o2RgxZqvpfsnIYse_-rzRD2pv7KZ8vuJvPgiKOUJy8R8Dw\"}",
+    "nonce": "1790345225419",
+    "sig": "zQpZcWuAB4rjnFW0U6QmUqDVtDjcB5bdNuP-tKeb9H-p9vE_SouVPsGsQR7Gt6ERh14uSo5n771Y6-VPFJCYDA"
+   },
+   "canonical": "{\"id\":\"be45225e4a2\",\"maker\":\"did:key:z6MkhTU6a5z5tr5Z49HkTWHgmsdYXCEnp67hfnLWpkLtrY8W\",\"px\":\"225.03\",\"qty\":\"43.98\",\"side\":\"buy\",\"taker\":\"did:key:z6Mko5eb3E3fPcyw9YWRoXkE3NoLw4YJHrw4mtFnjAUdYv7s\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 321154,
+    "ts": "2026-09-25T14:07:07.845549Z",
+    "from": "did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv",
+    "text": "{\"maker_sig\":\"iomPTRfmWefitk1RbgKzcKGX8dj1_bebeW1XPknXmW97QObXMqxTXc9bSFWypno2qVvts14s--L2KAuP08g4Bg\",\"season\":\"close-1\",\"t\":\"trade\",\"taker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"taker_sig\":\"r_JZA2dndQcdjUhpDjE2j5d4W8Fb5lxtmnXCVT_94PUspJ5-8WdfDxv9-AsoEK-76BsLGQx_EqVSQLcRL-PkAw\",\"terms\":{\"id\":\"cq1-1-1790345226\",\"maker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"px\":\"222.77\",\"qty\":\"12\",\"side\":\"buy\",\"taker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"until\":25}}",
+    "nonce": "1790345226290823999",
+    "sig": "_MuQzb8rfoMoBsta8SFBrp7A6smWIUmcja3ERLJ8XnTO4v5QNhWlf5M8toNenVfxc3VnfKisxgaayvQhQz8XAQ"
+   },
+   "canonical": "{\"id\":\"cq1-1-1790345226\",\"maker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"px\":\"222.77\",\"qty\":\"12\",\"side\":\"buy\",\"taker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"until\":25}"
+  },
+  {
+   "record": {
+    "seq": 321240,
+    "ts": "2026-09-25T14:07:09.253328Z",
+    "from": "did:key:z6Mkgw4MMTDkYYJMPVpc8XMX3jtHvJe6VRhtRkv76XyegbPK",
+    "text": "{\"t\":\"trade\",\"season\":\"close-1\",\"terms\":{\"id\":\"be452275b31\",\"maker\":\"did:key:z6Mkgw4MMTDkYYJMPVpc8XMX3jtHvJe6VRhtRkv76XyegbPK\",\"px\":\"225.03\",\"qty\":\"43.98\",\"side\":\"buy\",\"taker\":\"did:key:z6MknHXMC9xCNvZUghx76vwTxXFB27Jf6nDg7yZGMkD8EsvH\",\"until\":2556},\"taker\":\"did:key:z6MknHXMC9xCNvZUghx76vwTxXFB27Jf6nDg7yZGMkD8EsvH\",\"maker_sig\":\"7mxtLhrXumDyQZpTZ7RZxE5B0WyuVVBOHGRlqFAB6ocF33byYpT82JD83RFVnfTAw2b63FquJejL4P_wYDbqDQ\",\"taker_sig\":\"PbSOJBHFns7g-W8QUr_m820-T-oBeWedGfgAj_7ws7didiXN_BXfnxzu0cvf2VBxJ-_Wq-QQS205ZIBomK2QBw\"}",
+    "nonce": "1790345227553",
+    "sig": "k0zHxCJgwcyNif8pO5hJI3Tla7RoKtqfOKhmB9MXNqvsjephwuPcTTJMH6KtRtyfMRKF70mR8nENZyJWKaiKCw"
+   },
+   "canonical": "{\"id\":\"be452275b31\",\"maker\":\"did:key:z6Mkgw4MMTDkYYJMPVpc8XMX3jtHvJe6VRhtRkv76XyegbPK\",\"px\":\"225.03\",\"qty\":\"43.98\",\"side\":\"buy\",\"taker\":\"did:key:z6MknHXMC9xCNvZUghx76vwTxXFB27Jf6nDg7yZGMkD8EsvH\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 321318,
+    "ts": "2026-09-25T14:07:10.628009Z",
+    "from": "did:key:z6MkeakW2KTCPitv3xdWJwpmm9Yg2psS1Dpki1oWn4rAgwFe",
+    "text": "{\"t\":\"trade\",\"season\":\"close-1\",\"terms\":{\"id\":\"be45229e57c\",\"maker\":\"did:key:z6MkeakW2KTCPitv3xdWJwpmm9Yg2psS1Dpki1oWn4rAgwFe\",\"px\":\"225.03\",\"qty\":\"43.98\",\"side\":\"buy\",\"taker\":\"did:key:z6Mktr4Fm9g6GDgAR2drzeoadKVnJYYkrFFb4uUEdWQ2ggBu\",\"until\":2556},\"taker\":\"did:key:z6Mktr4Fm9g6GDgAR2drzeoadKVnJYYkrFFb4uUEdWQ2ggBu\",\"maker_sig\":\"L7jX6OmmicgtVrI0T-8WRmYHc3TPPw0PdweeHe70vtbvwUD2O_nDc8kelgNLqA_v4O9msRNb_PzRY2l5c7BsAA\",\"taker_sig\":\"m1SFVfa0mHUcsR4J4Gz0wO097oSSm1UT0ATuVjGVmLRgbzL-y0PBBim_j4Do6jYZxjlBTkUmmL8Ry_z7YxoWCQ\"}",
+    "nonce": "1790345229900",
+    "sig": "gcPFXofZixHF4rfg1kqtsNDQB8eynLfAiyYEH00gZ2hZcj3WdBO4dsQZrAu-Kbqh1RiYwEB6FKt-Z_2c452GBw"
+   },
+   "canonical": "{\"id\":\"be45229e57c\",\"maker\":\"did:key:z6MkeakW2KTCPitv3xdWJwpmm9Yg2psS1Dpki1oWn4rAgwFe\",\"px\":\"225.03\",\"qty\":\"43.98\",\"side\":\"buy\",\"taker\":\"did:key:z6Mktr4Fm9g6GDgAR2drzeoadKVnJYYkrFFb4uUEdWQ2ggBu\",\"until\":2556}"
+  },
+  {
+   "record": {
+    "seq": 321683,
+    "ts": "2026-09-25T14:07:17.592833Z",
+    "from": "did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv",
+    "text": "{\"maker_sig\":\"wV8LNZpfoepbi7mVGPaxkJk2CNtzosOJ9fcwgJqd5T59-yltQSJAId0prEXfMFCyXKMBxgcOyasT8W6nmZZeCQ\",\"season\":\"close-1\",\"t\":\"trade\",\"taker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"taker_sig\":\"I6rjxHDuPF607uxn7PMQcEeSF6NMD50w46_HxdfMN9vThCLcK0B_ab1rr20NniPdZAZaVHU8cq7bgqK8uBIiDQ\",\"terms\":{\"id\":\"cq1-1-1790345236\",\"maker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"px\":\"222.77\",\"qty\":\"12\",\"side\":\"buy\",\"taker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"until\":25}}",
+    "nonce": "1790345236071197156",
+    "sig": "MwaXBnLS_bij2EyvMlMdYQjmHPz47kqnvUztFnQxtBwzlH6GsCMufS5cIa6jQzN35XvzUizw8JlMzyXVi7PSAQ"
+   },
+   "canonical": "{\"id\":\"cq1-1-1790345236\",\"maker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"px\":\"222.77\",\"qty\":\"12\",\"side\":\"buy\",\"taker\":\"did:key:z6MksyUVtBwZnUN5mVeaUHN1K427z2SKzEQ52UXeUXwydvGv\",\"until\":25}"
+  },
+  {
+   "record": {
+    "seq": 324247,
+    "ts": "2026-09-25T14:09:06.871337Z",
+    "from": "did:key:z6MkqEqcWhyY6MRcLJtvfLBVgCwrBa3w5FMbm4KGVCnvQxMa",
+    "text": "{\"t\":\"trade\",\"season\":\"close-1\",\"terms\":{\"id\":\"kzpr1\",\"maker\":\"did:key:z6MkqEqcWhyY6MRcLJtvfLBVgCwrBa3w5FMbm4KGVCnvQxMa\",\"px\":\"225.03\",\"qty\":\"0.1\",\"side\":\"buy\",\"taker\":\"did:key:z6MkqEqcWhyY6MRcLJtvfLBVgCwrBa3w5FMbm4KGVCnvQxMa\",\"until\":2560},\"taker\":\"did:key:z6MkqEqcWhyY6MRcLJtvfLBVgCwrBa3w5FMbm4KGVCnvQxMa\",\"maker_sig\":\"T_ZylNfOe8qfdiIRAziHDiCcvyWchy-1VyBtfkxT0tCB4Ox_iK5m3Ab1Q_CUID2xhb1VODtzmCeKygRbAy13Aw\",\"taker_sig\":\"QBueDY5AzTNl_hKrPsBKtQOy24Pm216i-OGZ3Ia24eo8u7_sEW0yxlOcmSJpcb0LAlIARdHyEWsXNdfbpNLuAA\"}",
+    "nonce": "1790345345673267000",
+    "sig": "AThBZggQEkAGWflUyedAwx_5AZ0PrUO2wkFF6umVbkqbEp9UbedHfoKgNFYJnYLX91CK2FUhhaB1p_nJvOuIAw"
+   },
+   "canonical": "{\"id\":\"kzpr1\",\"maker\":\"did:key:z6MkqEqcWhyY6MRcLJtvfLBVgCwrBa3w5FMbm4KGVCnvQxMa\",\"px\":\"225.03\",\"qty\":\"0.1\",\"side\":\"buy\",\"taker\":\"did:key:z6MkqEqcWhyY6MRcLJtvfLBVgCwrBa3w5FMbm4KGVCnvQxMa\",\"until\":2560}"
+  },
+  {
+   "record": {
+    "seq": 324289,
+    "ts": "2026-09-25T14:09:18.636535Z",
+    "from": "did:key:z6MkwgBFaPTq5AaJSVm5zL8L4ooKcLqRJqd9QKFXYh237SA4",
+    "text": "{\"maker_sig\":\"EqV6T_zU84vkDu8keBa5hYOZV5GaYY38sraBIiWXTlCI-VpqApUAnJD6PE8Gosu7I7D5I9lYH4nlrQRM8L2GAg\",\"season\":\"close-1\",\"t\":\"trade\",\"taker\":\"did:key:z6MkwgBFaPTq5AaJSVm5zL8L4ooKcLqRJqd9QKFXYh237SA4\",\"taker_sig\":\"_BSRxZsc39Z3icGyDG0z6hyjewrbJ1lg29-VtKANH57BQ4KndghbLchcQXHxJp-6x54gsOKN_EN5JXLqzV0GAw\",\"terms\":{\"id\":\"closecall-925-01\",\"maker\":\"did:key:z6Mko9gZqrSJHd52ShxhaTzjQQXHUbpZaLsjQW6nB8Wufv8C\",\"px\":\"226.00\",\"qty\":\"10\",\"side\":\"buy\",\"taker\":\"did:key:z6MkwgBFaPTq5AaJSVm5zL8L4ooKcLqRJqd9QKFXYh237SA4\",\"until\":30}}",
+    "nonce": "1790345358140",
+    "sig": "0MpanB5JohmatotEdSolyIlhX1EF3LbX-ihTN59c8UVLvgX18o8EO_6eksPTvidXVOw4sPu7k3jFTeHdbk9UDA"
+   },
+   "canonical": "{\"id\":\"closecall-925-01\",\"maker\":\"did:key:z6Mko9gZqrSJHd52ShxhaTzjQQXHUbpZaLsjQW6nB8Wufv8C\",\"px\":\"226.00\",\"qty\":\"10\",\"side\":\"buy\",\"taker\":\"did:key:z6MkwgBFaPTq5AaJSVm5zL8L4ooKcLqRJqd9QKFXYh237SA4\",\"until\":30}"
+  },
+  {
+   "record": {
+    "seq": 325286,
+    "ts": "2026-09-25T14:09:36.189413Z",
+    "from": "did:key:z6Mkt7fourLUZNJS4yDiZSTThBZ9D5t22rVwEQdgnT2mT4Jo",
+    "text": "{\"t\":\"trade\",\"season\":\"close-1\",\"terms\":{\"id\":\"b0d7a880\",\"maker\":\"did:key:z6Mkt7fourLUZNJS4yDiZSTThBZ9D5t22rVwEQdgnT2mT4Jo\",\"px\":\"225.03\",\"qty\":\"43.80\",\"side\":\"buy\",\"taker\":\"did:key:z6MkuumDSTb63tJPiX7j12tVvBTSkDrsv4hYTBVnZagzSraT\",\"until\":73},\"taker\":\"did:key:z6MkuumDSTb63tJPiX7j12tVvBTSkDrsv4hYTBVnZagzSraT\",\"maker_sig\":\"ChmyxyFpXX_cPgK1Z0Vq4vls3NEqT5Gwf7k3SDL7Da0q2bMMSBnDRjbwrBG2Gjsh08AfVAyH2cdJIWeJtwwwDg\",\"taker_sig\":\"5XdO96LGRZqaQyR_rTks29EX7D85Sersnxn1t1xdZ7Ay_whvAvI359VVPgNV0ELGLhxGxolop38qb1coBjEOAw\"}",
+    "nonce": "1790345375504140500",
+    "sig": "EW7iiHaExKddhdD1bic9xvNspv7xQrIz1oIh8ckI-jAweDVjZkI1CrIeGpv3Wp0W12Gzbe_kcgIigNhCPaoPAA"
+   },
+   "canonical": "{\"id\":\"b0d7a880\",\"maker\":\"did:key:z6Mkt7fourLUZNJS4yDiZSTThBZ9D5t22rVwEQdgnT2mT4Jo\",\"px\":\"225.03\",\"qty\":\"43.80\",\"side\":\"buy\",\"taker\":\"did:key:z6MkuumDSTb63tJPiX7j12tVvBTSkDrsv4hYTBVnZagzSraT\",\"until\":73}"
+  },
+  {
+   "record": {
+    "seq": 327592,
+    "ts": "2026-09-25T14:10:02.380016Z",
+    "from": "did:key:z6MkfMG7t5E1FXN1gpXDjModHRnXfo4q7gZxeckQW2yEYneG",
+    "text": "{\"t\":\"trade\",\"season\":\"close-1\",\"terms\":{\"id\":\"floplog-selftest-1\",\"maker\":\"did:key:z6MkfMG7t5E1FXN1gpXDjModHRnXfo4q7gZxeckQW2yEYneG\",\"px\":\"225.03\",\"qty\":\"0.1\",\"side\":\"buy\",\"taker\":\"did:key:z6MkfMG7t5E1FXN1gpXDjModHRnXfo4q7gZxeckQW2yEYneG\",\"until\":27},\"taker\":\"did:key:z6MkfMG7t5E1FXN1gpXDjModHRnXfo4q7gZxeckQW2yEYneG\",\"maker_sig\":\"oVV_RNZk71GAMefKIKrTw1tfOsyIVhF7fzW-R26lR0-aCu-ytkqemdLlnpiw7Dj4OHQO0NdTh9UfSVgMGQX9Cw\",\"taker_sig\":\"K9iboAcHCk7USmpo_rxi5eglmkx46LXg7KrQcPnEj8vBPBr3KrfZAVklCFMBI0OS9YGD_LWsGAvRT52AB67pAA\"}",
+    "nonce": "1790345402237",
+    "sig": "Z-bGN3NEEULGOsYK2zNYf7dO_P-Q37QyWU1WUoAsqLov8UU-b4LzdyU5rD2DPKL1VB8D2M99r2-mtMD9ZLpZBA"
+   },
+   "canonical": "{\"id\":\"floplog-selftest-1\",\"maker\":\"did:key:z6MkfMG7t5E1FXN1gpXDjModHRnXfo4q7gZxeckQW2yEYneG\",\"px\":\"225.03\",\"qty\":\"0.1\",\"side\":\"buy\",\"taker\":\"did:key:z6MkfMG7t5E1FXN1gpXDjModHRnXfo4q7gZxeckQW2yEYneG\",\"until\":27}"
+  }
+ ],
+ "owners": [
+  {
+   "seq": 306308,
+   "ts": "2026-09-25T14:03:00.722440Z",
+   "from": "did:key:z6MkiDTcYLKG1e5kDmbVi4Cnj89UhkQt7SHFvAydmz5VhpxK",
+   "text": "{\"key\":\"did:key:z6MkiDTcYLKG1e5kDmbVi4Cnj89UhkQt7SHFvAydmz5VhpxK\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981760552",
+   "sig": "eMLP8p5tm5TABFI_GS-B-auzQanXvd_vIrLFy4amFltAJeEo9isZgQk_bVCGzhJ7kmond3vhPPWQaX-LWLAqDA"
+  },
+  {
+   "seq": 306309,
+   "ts": "2026-09-25T14:03:00.726056Z",
+   "from": "did:key:z6MkqPfEJMNYmcEDXcjTXzT7fwqAGqU2S6iZd8sXgoFjotxR",
+   "text": "{\"key\":\"did:key:z6MkqPfEJMNYmcEDXcjTXzT7fwqAGqU2S6iZd8sXgoFjotxR\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981036522",
+   "sig": "xdOIU3eDaEgp0Ugpltp7uPPiHC817YMNmCiSjtouX3pPky79Ut8Zi8PDMUQ0UheqZySYsBM1F6PuokabrN2-CQ"
+  },
+  {
+   "seq": 306310,
+   "ts": "2026-09-25T14:03:00.746829Z",
+   "from": "did:key:z6Mkukqf7eDFJqedTi2A3gvHc8L4Q9ADFKqYJ9kPN1U4Kp7y",
+   "text": "{\"key\":\"did:key:z6Mkukqf7eDFJqedTi2A3gvHc8L4Q9ADFKqYJ9kPN1U4Kp7y\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344979381478",
+   "sig": "hv-_gpIJyrePyEsP1hMXHvHCJwAlUZDuSsAuvLTm1iknc7-k2SYNqZogAuUebNVpR34BVTYLHSBgT8B5fQrIDg"
+  },
+  {
+   "seq": 306311,
+   "ts": "2026-09-25T14:03:00.751150Z",
+   "from": "did:key:z6MksCyv7N2YKdqWTZXbHyUpz324vCFMktB6NUpKaUWpjepJ",
+   "text": "{\"key\":\"did:key:z6MksCyv7N2YKdqWTZXbHyUpz324vCFMktB6NUpKaUWpjepJ\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981310536",
+   "sig": "zNhV5hLYG0HWkP_si3p6ZDN1rW0-9X_DpszdikqFx4jCbm4yNd5WAyKV60fRSopqGziglh8Tnc5kKYjqR4pCAQ"
+  },
+  {
+   "seq": 306313,
+   "ts": "2026-09-25T14:03:00.807920Z",
+   "from": "did:key:z6MkvfoqTTNXPtwoy83ZMT9WJf7mWWqUUnsBfEnpaTwEJVN1",
+   "text": "{\"key\":\"did:key:z6MkvfoqTTNXPtwoy83ZMT9WJf7mWWqUUnsBfEnpaTwEJVN1\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981175526",
+   "sig": "d8f1uv8C534rF8dxek_zkbRaRdYexfdLP02cUrp3ePgnJ0BWd7Bezcu9erTOfCQkSJPhDADAvDBPmRXKDZQ5Dg"
+  },
+  {
+   "seq": 306315,
+   "ts": "2026-09-25T14:03:00.822967Z",
+   "from": "did:key:z6Mkie416LnNk27tjXHeNSNRn11SXxztr9jbn1MkExGP3n8r",
+   "text": "{\"key\":\"did:key:z6Mkie416LnNk27tjXHeNSNRn11SXxztr9jbn1MkExGP3n8r\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344979337477",
+   "sig": "NO_JOEDDSmfNsjdmZZHyYX-Hqefe_7aax4m0WbYw4ITWM6B0oJmdKejOCvQbWa-Y6qUHRAC_UUInow3IRcjyAQ"
+  },
+  {
+   "seq": 306316,
+   "ts": "2026-09-25T14:03:00.824587Z",
+   "from": "did:key:z6MknXGgypjkHQZLbsFoFoR1MaL2xRFsrgBghf5iEHUJw68a",
+   "text": "{\"key\":\"did:key:z6MknXGgypjkHQZLbsFoFoR1MaL2xRFsrgBghf5iEHUJw68a\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981279533",
+   "sig": "YI9VGyodMHu0NjvwbOO06nNOd9NzW_oo-4i4wRBSe8XPsujRhUwfXHgdHWbR0EPgpKHFK1GfobpKE94_Y-beDQ"
+  },
+  {
+   "seq": 306317,
+   "ts": "2026-09-25T14:03:00.865864Z",
+   "from": "did:key:z6MksxvtBtvTEejpbUuJNVpVrQyfVAsxoPVVzvxVLLJ9Z8w4",
+   "text": "{\"key\":\"did:key:z6MksxvtBtvTEejpbUuJNVpVrQyfVAsxoPVVzvxVLLJ9Z8w4\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981044523",
+   "sig": "KdAguIcnn4qqIN7smf5TJGaqbCHwNbPAEKKzETWzyE3UTKD5OuCve1JhMika_IvP2YKJk5Dm8D-sulUK5iKzAg"
+  },
+  {
+   "seq": 306320,
+   "ts": "2026-09-25T14:03:00.914995Z",
+   "from": "did:key:z6MkvF9CYPNoPjMSVgNtBk2oDWz8ZU2kTEYeix7jQGoBitRh",
+   "text": "{\"key\":\"did:key:z6MkvF9CYPNoPjMSVgNtBk2oDWz8ZU2kTEYeix7jQGoBitRh\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344979467480",
+   "sig": "f1dtepdX8K_Qr2YplflK35sYKUR5lj8pndN8AnFhLypdWngQxxasps9cFpqt3zblBkV9rnn1mklicy40CMVYDg"
+  },
+  {
+   "seq": 306321,
+   "ts": "2026-09-25T14:03:00.919870Z",
+   "from": "did:key:z6MksGTQoQFz7scbrsogwCoutApLjMKM8bccjP2FVhyWW7ZW",
+   "text": "{\"key\":\"did:key:z6MksGTQoQFz7scbrsogwCoutApLjMKM8bccjP2FVhyWW7ZW\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981956557",
+   "sig": "PBnd6o8adCvu8dbKCeWa0gM88uTC837NEdRXr9_N56PZrDy_havZ51cyZxdlQ99KPO3NNn6Q_dppNU5mID7GCA"
+  },
+  {
+   "seq": 306323,
+   "ts": "2026-09-25T14:03:00.943723Z",
+   "from": "did:key:z6MkuKWPBe23oXvEwwWeqak5QcAABQPNP7wqgdin9x9prKKr",
+   "text": "{\"key\":\"did:key:z6MkuKWPBe23oXvEwwWeqak5QcAABQPNP7wqgdin9x9prKKr\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981733551",
+   "sig": "pUMwgg8vqpci7csfkLffhcDYiUn4hHNs19Y_SsLUPO9qyH6qk0VWs-s8ZvTLjQrSmivkVTXwz8Rr8TOpliuaBA"
+  },
+  {
+   "seq": 306333,
+   "ts": "2026-09-25T14:03:01.134588Z",
+   "from": "did:key:z6MkjRSZyaZ6bmekkuV9waHn9WeTgJ8NEe68q525moFpesQy",
+   "text": "{\"key\":\"did:key:z6MkjRSZyaZ6bmekkuV9waHn9WeTgJ8NEe68q525moFpesQy\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981016520",
+   "sig": "3hqaKGrmQ96gVAXIN2oM7cP9WUnfIC79a_1J3nwDvkM3RHPM5TP6fdvU9bc_VI_Vsx3JuadLd49JoCs8Qe8PCg"
+  },
+  {
+   "seq": 306334,
+   "ts": "2026-09-25T14:03:01.162896Z",
+   "from": "did:key:z6Mktje5zwh5qRex8kUy6iFz9vreKW4rW4Dcfrngmbtym5NK",
+   "text": "{\"key\":\"did:key:z6Mktje5zwh5qRex8kUy6iFz9vreKW4rW4Dcfrngmbtym5NK\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344979705484",
+   "sig": "l_g_ZlBe_wW8pWxJCcg7k61uNsPiCbssc6_J0rNrKUhH9W9skQjP59akLm1XgyXHO5AQN-UpaPsww-49KzwHBg"
+  },
+  {
+   "seq": 306337,
+   "ts": "2026-09-25T14:03:01.183579Z",
+   "from": "did:key:z6MkuV1nAPpqMsPQz62ofxB3k8JKmZjZ1oeYKQcQfNdMdJBc",
+   "text": "{\"key\":\"did:key:z6MkuV1nAPpqMsPQz62ofxB3k8JKmZjZ1oeYKQcQfNdMdJBc\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344982115559",
+   "sig": "i357ubkHSSo0CXMn7vs-N4xEeZ7jKBS_ZT4bXvySmRlBSfuBHwAocmdVeasQK2iVHDXK5DKe4vFLmMIClOW8Bg"
+  },
+  {
+   "seq": 306339,
+   "ts": "2026-09-25T14:03:01.197371Z",
+   "from": "did:key:z6MkhtpYFDDqXNEy3fvs35N8GYxZkzEFHap2S5SMfQnsYwyX",
+   "text": "{\"key\":\"did:key:z6MkhtpYFDDqXNEy3fvs35N8GYxZkzEFHap2S5SMfQnsYwyX\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344979951491",
+   "sig": "oo1HGmua31061MnxJoiPzbZ958urQ5FmQKnogstGUuFER7jcCf4ZPRIN-TnePrzvW6f85B_1ZhwLcXZAojRIBA"
+  },
+  {
+   "seq": 306343,
+   "ts": "2026-09-25T14:03:01.231962Z",
+   "from": "did:key:z6Mkgmx7bxPDC8eyoJTG1rjjyNnKPXyGce2DbwY6nndKmxQ7",
+   "text": "{\"key\":\"did:key:z6Mkgmx7bxPDC8eyoJTG1rjjyNnKPXyGce2DbwY6nndKmxQ7\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981313537",
+   "sig": "GynFdZiojyXvCdwa-MiOqEGBi5l2riSNRBfanJmkB33p-OX9-isTW7sKgoCr6MZEcnM7NcZOwa7eaEUUNOtUBw"
+  },
+  {
+   "seq": 306344,
+   "ts": "2026-09-25T14:03:01.236718Z",
+   "from": "did:key:z6MkpkxWxwzmBgqqJkfLVQr5B9UrwnWBjDZQzJPXL35eBx98",
+   "text": "{\"key\":\"did:key:z6MkpkxWxwzmBgqqJkfLVQr5B9UrwnWBjDZQzJPXL35eBx98\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344980182498",
+   "sig": "2DvGmw1zcGt2l1orYA5pBkSO76B9YLKb_LmXrPt2O08bA_cyF2KYq5_XCxj4LEgaBXH0m7hHeD8hQH-ZvagZAA"
+  },
+  {
+   "seq": 306345,
+   "ts": "2026-09-25T14:03:01.292554Z",
+   "from": "did:key:z6MkedwEwPRqqVux9YRdk5HFQzynpnJ7fiwiP114JExYiZRP",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkedwEwPRqqVux9YRdk5HFQzynpnJ7fiwiP114JExYiZRP\"}",
+   "nonce": "1790344980723039566",
+   "sig": "jT6iKUjEuX5HijMTa-odPE7pnsJOY1dv4nx69ho3Er6nzdSacKipKlHXtPbhi8Xm7ra_g9msKgktKJDFabYEAQ"
+  },
+  {
+   "seq": 306346,
+   "ts": "2026-09-25T14:03:01.293784Z",
+   "from": "did:key:z6MkpMPZ6WQz1XUkwTQh3ZCLwggug7z7pZ8XJzTaxkVzSuzZ",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkpMPZ6WQz1XUkwTQh3ZCLwggug7z7pZ8XJzTaxkVzSuzZ\"}",
+   "nonce": "1790344980730109153",
+   "sig": "UxSn0P2dmOJNOaOh0JjQ-y9togq01_EZ_QObtrSRb3q5-4zTUfzyIP1_GY6N1_IFfxq40gb4kEwYSJ8nKsQWAA"
+  },
+  {
+   "seq": 306347,
+   "ts": "2026-09-25T14:03:01.327099Z",
+   "from": "did:key:z6Mkt7poEoQErSaJpzt3sVs4oUwSVs4AogwnK34M7LkGKttC",
+   "text": "{\"key\":\"did:key:z6Mkt7poEoQErSaJpzt3sVs4oUwSVs4AogwnK34M7LkGKttC\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344982135560",
+   "sig": "O_XFYfsnUtM5UdVkG1yNgUNhYQ6opGEPLBHEutrSRKbo2CwOH9plrMaw6UdFvlEfccpPD_iuRsPBQdPrlgu1CQ"
+  },
+  {
+   "seq": 306348,
+   "ts": "2026-09-25T14:03:01.366337Z",
+   "from": "did:key:z6MkkyA22nWitVuVcsoDSTbeHBZpANLUsRRkmWbwpUTzEXJA",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkkyA22nWitVuVcsoDSTbeHBZpANLUsRRkmWbwpUTzEXJA\"}",
+   "nonce": "1790344979689514186",
+   "sig": "q3cmeA2DnLaHPaQK6EBAAdEMENPIw2EhqgiZYS37biq2AXm5hxPc5x8qJDULPjHm6lCsZZiyubfKlgQFk8D0Cw"
+  },
+  {
+   "seq": 306349,
+   "ts": "2026-09-25T14:03:01.371322Z",
+   "from": "did:key:z6MkvqaR8jMqr1KRjEnPSMDHLaVW3qXLLEjPyY8drJdoWHhY",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkvqaR8jMqr1KRjEnPSMDHLaVW3qXLLEjPyY8drJdoWHhY\"}",
+   "nonce": "1790344980718068542",
+   "sig": "WgQ1RMQquIhSdXU3X0SLcnP0CYeyMPLYG5TtgCjZw37h8WD_miQieLElWnv9quldcEGUc0EBIUejeze2GgZ_Cg"
+  },
+  {
+   "seq": 306350,
+   "ts": "2026-09-25T14:03:01.379136Z",
+   "from": "did:key:z6Mkk4cfXnCTq8BSJoToRpjjFZgrEJePj4E98CM9WXm5ihdC",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkk4cfXnCTq8BSJoToRpjjFZgrEJePj4E98CM9WXm5ihdC\"}",
+   "nonce": "1790344980248392004",
+   "sig": "xdEPfHUwgiH_Sm1LwdEKSX_lwbyQ60eGCEjVsLU1RMj5YQKH6XgATPPY1gaO3ndbztpg0-vnvzPNlfWa020PBg"
+  },
+  {
+   "seq": 306351,
+   "ts": "2026-09-25T14:03:01.383957Z",
+   "from": "did:key:z6MkjSyAfTAkxGjNiPpBou4kwFirtEVTASLAi7wKfo9zPzJp",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkjSyAfTAkxGjNiPpBou4kwFirtEVTASLAi7wKfo9zPzJp\"}",
+   "nonce": "1790344980932151999",
+   "sig": "PqRfo82wQaLCgd6bwaR28F4a5nrG2jvw0aZR4YbTVzKBEwvpXboeyAcX67qL6VDvRnp4S5p1CsWDnbiNjdoACw"
+  },
+  {
+   "seq": 306352,
+   "ts": "2026-09-25T14:03:01.391212Z",
+   "from": "did:key:z6MkexDbAPUzsu638ffqG433q94GSqFvNXo33vsWSan1YgiV",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkexDbAPUzsu638ffqG433q94GSqFvNXo33vsWSan1YgiV\"}",
+   "nonce": "1790344978296595673",
+   "sig": "fBxyBCixiLy-Jnu8RmTEH2J40OeqvgKxiMzoA4GGavbp8iOpGYpWBi6HBIYewow7zBHwLTPyuCxw_e-yHQQcAw"
+  },
+  {
+   "seq": 306353,
+   "ts": "2026-09-25T14:03:01.396773Z",
+   "from": "did:key:z6Mkp4Gf65231prvDGepbCYuzfrtsUwDBVXxcA4VrYMNtQin",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkp4Gf65231prvDGepbCYuzfrtsUwDBVXxcA4VrYMNtQin\"}",
+   "nonce": "1790344978509758860",
+   "sig": "1vzoxXG8aIxoKyF5ZwZvPvGVbn-6KM79f0HgKY8ujfX1HyG-4ywH19dti1Kw52HXoeIDDRCRfAgIKT6k2OAbBQ"
+  },
+  {
+   "seq": 306354,
+   "ts": "2026-09-25T14:03:01.420219Z",
+   "from": "did:key:z6MknyVMz4nju7QEqZ8Y7qQXMF3iUSKALUy67DqkhGR3TjvT",
+   "text": "{\"key\":\"did:key:z6MknyVMz4nju7QEqZ8Y7qQXMF3iUSKALUy67DqkhGR3TjvT\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344982404566",
+   "sig": "4YxcPMB9M-eO99u0ah2RII-a-j1Wszt9gc3bztdpT0Dj6PEpefx6egQJmYnV4PZ_z8Nser3h1FjjeS7jpkd5BQ"
+  },
+  {
+   "seq": 306355,
+   "ts": "2026-09-25T14:03:01.428521Z",
+   "from": "did:key:z6MkrzDwm3R82XdJZXa8w18drDQskn5VQ4dkXLcq98EpFEdy",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkrzDwm3R82XdJZXa8w18drDQskn5VQ4dkXLcq98EpFEdy\"}",
+   "nonce": "1790344978308641706",
+   "sig": "FIOdcdMxTJS3soNZ9L_EWx5KBhnwzH9WpIcDe3Jta6sJrDA-CImYafupMz1qNkeudIYJfOmzZsijV8T_wCgdDg"
+  },
+  {
+   "seq": 306356,
+   "ts": "2026-09-25T14:03:01.434188Z",
+   "from": "did:key:z6Mkij5uLSbUieEDu1P62kKAvxoWREzxDeSkVm63xyCty69u",
+   "text": "{\"key\":\"did:key:z6Mkij5uLSbUieEDu1P62kKAvxoWREzxDeSkVm63xyCty69u\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344982238564",
+   "sig": "T211rduNqL9rqvkYmNBO6A1sNUACWC-xJKf8WP2MSEPb5pfnfTIEVQPcw_XQnoRP1Gf3zgX9oaFJ7V20TxiHDw"
+  },
+  {
+   "seq": 306357,
+   "ts": "2026-09-25T14:03:01.434197Z",
+   "from": "did:key:z6MkvNQazmBSX7gibfrmzKFi6V6gtZ3fWHum99Q4h5VgHvKz",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkvNQazmBSX7gibfrmzKFi6V6gtZ3fWHum99Q4h5VgHvKz\"}",
+   "nonce": "1790344979958133735",
+   "sig": "bJcv1KnUaWAdxhCohuahxxKDZ2aSt5t9sHSa3j5qK-zBJCUndBzqo1vFUKdKkJuWmnDZsyGDkjL7xKS8QvlVBQ"
+  },
+  {
+   "seq": 306358,
+   "ts": "2026-09-25T14:03:01.443373Z",
+   "from": "did:key:z6Mks2ARPApYcUzfBG5HWPk1YBUzky1jACCLjeATCzj5fUYT",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mks2ARPApYcUzfBG5HWPk1YBUzky1jACCLjeATCzj5fUYT\"}",
+   "nonce": "1790344980163894721",
+   "sig": "ZP_0xOKBZ5jDCft-WlKOqyIlnFduiSYHeGTUsaww5V1i0LwgcgXp75uIW1FLxADwdytAg_GU1MHsXJuJzJKlCw"
+  },
+  {
+   "seq": 306359,
+   "ts": "2026-09-25T14:03:01.454199Z",
+   "from": "did:key:z6MkkSPzoMQvonfq9Ai5RxGNjRA7VPA71YzYDPyh8GewbJCY",
+   "text": "{\"key\":\"did:key:z6MkkSPzoMQvonfq9Ai5RxGNjRA7VPA71YzYDPyh8GewbJCY\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344982197563",
+   "sig": "Y9bKPY1whgSCy3kb67RELBDFkJ_O7yed77nbF8R2Yl3gnmhdbqaT0Z099Ob0riMoi3jkmK1RXA8_DRjr6OA3CQ"
+  },
+  {
+   "seq": 306360,
+   "ts": "2026-09-25T14:03:01.459145Z",
+   "from": "did:key:z6MkmcjqhiDikNdVKg1MJwhjJQzci2sTZgmNMs23AHheVTp7",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkmcjqhiDikNdVKg1MJwhjJQzci2sTZgmNMs23AHheVTp7\"}",
+   "nonce": "1790344980932048536",
+   "sig": "h5ams_C4TaRvA99ynbQC1NydVPUuOTgZgbUfUHv8LHOzeEVn8unusYvUK5ADmHq_3sywtm-xuPjxRXnMmF_wAQ"
+  },
+  {
+   "seq": 306361,
+   "ts": "2026-09-25T14:03:01.468746Z",
+   "from": "did:key:z6MksHWA7R91HomHoBgE4vjVeLuPMsf7VXy2WkMMEBe55Jci",
+   "text": "{\"key\":\"did:key:z6MksHWA7R91HomHoBgE4vjVeLuPMsf7VXy2WkMMEBe55Jci\",\"season\":\"close-1\",\"t\":\"owner\"}",
+   "nonce": "1790344981540548",
+   "sig": "Ob31mxAmFq-mstT3Y5KL5QTS1ZIOPxZEgyUAV0_rCIaLN4gUgBXeAEEArwgzFxKvl0ory68eXYsV0oy83bojBg"
+  },
+  {
+   "seq": 306362,
+   "ts": "2026-09-25T14:03:01.483660Z",
+   "from": "did:key:z6Mks1YUq4BcQPG21xirvKqSM86YvYtLRWGViiNAPMpttcmB",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mks1YUq4BcQPG21xirvKqSM86YvYtLRWGViiNAPMpttcmB\"}",
+   "nonce": "1790344978370292390",
+   "sig": "xj-duJx7-3ZevIznwFhKFlkct26COuaBRE17jtCDNDIxK0QDHgJXfbvCgEHE3brKIX_rTEe2jBiFOqESH5YWBQ"
+  },
+  {
+   "seq": 306363,
+   "ts": "2026-09-25T14:03:01.487291Z",
+   "from": "did:key:z6MkgDGGjczjc5AoDPK2cU3r8C63WgyxAZAwTHQ3WhAJM73r",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkgDGGjczjc5AoDPK2cU3r8C63WgyxAZAwTHQ3WhAJM73r\"}",
+   "nonce": "1",
+   "sig": "qDyCTZirMNR_TVpn5tuUvevBqUkSL7SoB2qPCrGztJQAahrF7X7m14mhOFFiXZQT3YvJCJE5u4_aCXxVUuBsBQ"
+  },
+  {
+   "seq": 306364,
+   "ts": "2026-09-25T14:03:01.493243Z",
+   "from": "did:key:z6Mkk7trjP2rdBnTLNL6kM3gc63MsHjV7KWnP6fXgXPrGzP3",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkk7trjP2rdBnTLNL6kM3gc63MsHjV7KWnP6fXgXPrGzP3\"}",
+   "nonce": "1790344978099434610",
+   "sig": "p24qObG_W43w5NkKqxRxEI7MFL68LzIdCcIlez5AmNRtvT9szkBkvt-4FhhBoDZx-5rkApN1s40yYIUQs9diCw"
+  },
+  {
+   "seq": 306365,
+   "ts": "2026-09-25T14:03:01.497455Z",
+   "from": "did:key:z6Mkod77BaEaKADnFoDDpLB83voFXiE3PTv1QzN1gCnkssFD",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkod77BaEaKADnFoDDpLB83voFXiE3PTv1QzN1gCnkssFD\"}",
+   "nonce": "1790344980054195173",
+   "sig": "lKjNJVshRE4Lkvc7jmqgUwTiys7dkExuTbiywDKPo5ypxan29BQMHlryqGpr_mDQ4s09nRmjVkJWQc0CsLTeAQ"
+  },
+  {
+   "seq": 306366,
+   "ts": "2026-09-25T14:03:01.503245Z",
+   "from": "did:key:z6MknTfM1x68MQhv5nRryw6rew5jJBZpzMwotvRG5ECnKRk3",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MknTfM1x68MQhv5nRryw6rew5jJBZpzMwotvRG5ECnKRk3\"}",
+   "nonce": "1790344980948517404",
+   "sig": "zCkE4zZiNnmbe6ryMrBLPnYm6u_wUILLGWEVXOnAlW4wF3qEGcXA9JghyOpFMWEKJROxEyVE_9Fzx1m-OqTvAA"
+  },
+  {
+   "seq": 306367,
+   "ts": "2026-09-25T14:03:01.520944Z",
+   "from": "did:key:z6Mkhki1dq8Q8LQMQgjYmZ2iHz2Nq46szgFtgTDPDBvEMwK5",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkhki1dq8Q8LQMQgjYmZ2iHz2Nq46szgFtgTDPDBvEMwK5\"}",
+   "nonce": "1790344980932926161",
+   "sig": "Z6PtGXOhunzeZ0pv8x4NNkXyUXohNmq0mALwlKHliGe9jXkFYXAqvrl2V7DVvMg4_RSlZne-wGVOwj6MXAArCg"
+  }
+ ],
+ "owners_big_nonce": [
+  {
+   "seq": 306312,
+   "ts": "2026-09-25T14:03:00.763214Z",
+   "from": "did:key:z6MksgCJ6eTx7xJ21TmBBhwrRkg83VCdVUPxr6NpTjXrxBWX",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MksgCJ6eTx7xJ21TmBBhwrRkg83VCdVUPxr6NpTjXrxBWX\"}",
+   "nonce": "1790344977264199191",
+   "sig": "50FHqqLrRj9foo0Sa5MZNxj46FzVW1sFGlOIAzKoZt6GFtvwF_ajv-Fgo7wFv6jFl6VPqtf_5oQ3mlv-MmOEDQ"
+  },
+  {
+   "seq": 306314,
+   "ts": "2026-09-25T14:03:00.821355Z",
+   "from": "did:key:z6Mkg1kW45EGiKKrcBBX7iBGY5euWnV9iaMuQzWZPtYJtoXT",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkg1kW45EGiKKrcBBX7iBGY5euWnV9iaMuQzWZPtYJtoXT\"}",
+   "nonce": "1790344980103323155",
+   "sig": "ahCJf-FR8HbII2ak16t5-DTtj2Y7r2MZ8eyocUHpD7kpSdbCOfBHzdPvqQYervHdRe4OTt86Y5klz-p_duywAQ"
+  },
+  {
+   "seq": 306318,
+   "ts": "2026-09-25T14:03:00.897891Z",
+   "from": "did:key:z6Mku3YDdAWTcoMwfmjyf4insPjJW1AMJ2wrNWa5fBnG3HGB",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mku3YDdAWTcoMwfmjyf4insPjJW1AMJ2wrNWa5fBnG3HGB\"}",
+   "nonce": "1790344979786911876",
+   "sig": "kTCFHs7jldfy3IjnZJ1tQ8-z22yHXd-iW58SCsoZRFqzvY3B7VVQ9JDniBk24Hh8qT6y015wbuGR2EUHeUhNCA"
+  },
+  {
+   "seq": 306319,
+   "ts": "2026-09-25T14:03:00.908241Z",
+   "from": "did:key:z6MkuEQKfe5DRamRwy2dTHjtstcpPhTJjpm3TV38F5pkiaA2",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkuEQKfe5DRamRwy2dTHjtstcpPhTJjpm3TV38F5pkiaA2\"}",
+   "nonce": "1790344977728806417",
+   "sig": "oSQeB-UsWMC0-MS_O9zPVzGIT5KW6u_r9AKLuflupfUQbq5CcLVKW8VMHPJD1l23jFmr7RDztuoymvL9iuUpBA"
+  },
+  {
+   "seq": 306322,
+   "ts": "2026-09-25T14:03:00.933965Z",
+   "from": "did:key:z6MksLKZUSDMLc3k19tELv8AN3KrQBU9DiRWyHGzFR6X6hVN",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MksLKZUSDMLc3k19tELv8AN3KrQBU9DiRWyHGzFR6X6hVN\"}",
+   "nonce": "1790344979819789901",
+   "sig": "Mgf_Ze0v-WYBidrOmXPnXvetoViWjqHV2Fw8bP4Gd9XcPL2nhu4-a8MmbgAev87bc1j460lZ7ssxP9yMemUSBQ"
+  },
+  {
+   "seq": 306324,
+   "ts": "2026-09-25T14:03:00.954844Z",
+   "from": "did:key:z6MkfiCQTFHkSdDmkzRdDdNcMuSC5XFG56vvHfsqh9YpUDPj",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkfiCQTFHkSdDmkzRdDdNcMuSC5XFG56vvHfsqh9YpUDPj\"}",
+   "nonce": "1790344979837695903",
+   "sig": "g3RsroUI6_gB_GvBmAV7IyN9ld6oJBeiXX54o6rUn7JOR497Romu1UJOJtZYjQfglrSlgl1VJraiqBYUCWqLAA"
+  },
+  {
+   "seq": 306325,
+   "ts": "2026-09-25T14:03:00.961938Z",
+   "from": "did:key:z6MkjfTZ9g8KBsxtGkv8wkzbmmVdFsSyKaWxoyHSJ17fKmaQ",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkjfTZ9g8KBsxtGkv8wkzbmmVdFsSyKaWxoyHSJ17fKmaQ\"}",
+   "nonce": "1790344979475582513",
+   "sig": "n6rjwn-OC3NO5LIy0y_VuzcEjFBBaLQg6tSt8eNnoUEgDxkQXONOQomu2FdqxN8cgXSOvDSif9RhR6TKph0BDA"
+  },
+  {
+   "seq": 306326,
+   "ts": "2026-09-25T14:03:00.996778Z",
+   "from": "did:key:z6MkixMzss54ZQyahJByMTX165csT9B4J5wR4Q9TTuT8MFuU",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkixMzss54ZQyahJByMTX165csT9B4J5wR4Q9TTuT8MFuU\"}",
+   "nonce": "1790344978199066025",
+   "sig": "HoXWiQE61FlRSJJ4t2AaR7nyta99g_LURpG9m4NRL_-c-GYG72J226iEWeapsQeOszgfNLuV34GFiMgCy5a1CA"
+  },
+  {
+   "seq": 306327,
+   "ts": "2026-09-25T14:03:00.997352Z",
+   "from": "did:key:z6MkqSh9RaSAeXAKJvQySZsbkJ28YDtJuNjhDEmXmh2FYz9R",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkqSh9RaSAeXAKJvQySZsbkJ28YDtJuNjhDEmXmh2FYz9R\"}",
+   "nonce": "1790344979821818424",
+   "sig": "MDe2D_Gi4lIih2BAjqQFmaNllS_jr147nv7Guvx94DiiQMJwjgV-Giub8jSjVGOOp0J4mzUi-ES1XhHUaYx8CQ"
+  },
+  {
+   "seq": 306328,
+   "ts": "2026-09-25T14:03:01.034165Z",
+   "from": "did:key:z6MkojqcxUUZsKY623yKG3Sp8i9bmiaAN9uWSFCuooVNEy6c",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkojqcxUUZsKY623yKG3Sp8i9bmiaAN9uWSFCuooVNEy6c\"}",
+   "nonce": "1790344980312573324",
+   "sig": "9HI-Mj_BxJ_332DlGHM6pAU_p00May7CpJCwwv5GIKeEn_TbQAochfcXrDZC0fKybDC-jFjium40rpfD97JiDA"
+  },
+  {
+   "seq": 306329,
+   "ts": "2026-09-25T14:03:01.058976Z",
+   "from": "did:key:z6MkkkgXM4Eck5RtHxB6iZBMibF6aCED3FLRMkcwU3i9qFJ8",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkkkgXM4Eck5RtHxB6iZBMibF6aCED3FLRMkcwU3i9qFJ8\"}",
+   "nonce": "1790344977880944034",
+   "sig": "zKM2_1PKJp7qOaq1ahyEjIeR1Fa8zb6r0kltp50j-_PJMCPOjARoBYYt2_gJLnWiH8sh5dH55tnY2pfVO0k0Dw"
+  },
+  {
+   "seq": 306330,
+   "ts": "2026-09-25T14:03:01.065647Z",
+   "from": "did:key:z6MkfoT6dNaN1dXFdNqBemFsBioKKFir4qsz1CQEj6TJMS7o",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkfoT6dNaN1dXFdNqBemFsBioKKFir4qsz1CQEj6TJMS7o\"}",
+   "nonce": "1790344979992251626",
+   "sig": "PvxuG_og4-ejtdH18iSU7UYEIhNNwIahp6tH6nG03hGB6zOsfKbh43fLFxCgE_3YOwOMtFQBOT-F7LuhhTd9DQ"
+  },
+  {
+   "seq": 306331,
+   "ts": "2026-09-25T14:03:01.128769Z",
+   "from": "did:key:z6Mkt9at6DJzzUh8ArwTkg7HrDBkNh5iAjK1UPhBdVgm8bR5",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkt9at6DJzzUh8ArwTkg7HrDBkNh5iAjK1UPhBdVgm8bR5\"}",
+   "nonce": "1790344979687752597",
+   "sig": "tWKm6OX3VBj7_pH3tq8wi1B-1et4SH8x0E7Es9UEzp0APyyKXLLpMb4mrRbZuXWQz2jvBJ8HJFxDHwvSDSBNAQ"
+  },
+  {
+   "seq": 306332,
+   "ts": "2026-09-25T14:03:01.131491Z",
+   "from": "did:key:z6Mkrv95m6EjDRPJAT5WzgQ3Lu6kzpk8mEjaWEGP4XGpu1bk",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkrv95m6EjDRPJAT5WzgQ3Lu6kzpk8mEjaWEGP4XGpu1bk\"}",
+   "nonce": "1790344980725744952",
+   "sig": "nCTMGxTnA9q__PuSesPf8IAya1VqEJMUf8xi2TnjjphiaclYMoUgdAx76in6HcHVxkoNz1yfbgk5cl-0UQIxAA"
+  },
+  {
+   "seq": 306335,
+   "ts": "2026-09-25T14:03:01.171853Z",
+   "from": "did:key:z6MkhecQm11kCJ4gAeYC39GzD3wPN3UF3GD2aEHmmXLzk4f4",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkhecQm11kCJ4gAeYC39GzD3wPN3UF3GD2aEHmmXLzk4f4\"}",
+   "nonce": "1790344980718442882",
+   "sig": "ZkYWtozFODXlJ2yBkHxgecRIMEYrrssUygIk9BJOgqAjqQiG8ie6Pl-FW9biketsWs8UxuCLAqSG0ybcfkM4CQ"
+  },
+  {
+   "seq": 306336,
+   "ts": "2026-09-25T14:03:01.177201Z",
+   "from": "did:key:z6MkoAZzWSvdwemiaQk66zEM7FvDSqYRnnYfXtvJWjCHUbYE",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkoAZzWSvdwemiaQk66zEM7FvDSqYRnnYfXtvJWjCHUbYE\"}",
+   "nonce": "1790344980056149696",
+   "sig": "UK976oQFCWHx2_zSgKruRlAOQDrBCbr1CZ1q69WIZpDbDnTLXfDqFnRbEC3NhSiK_eO1WcLK8mw1Kh-QqueuCw"
+  },
+  {
+   "seq": 306338,
+   "ts": "2026-09-25T14:03:01.194716Z",
+   "from": "did:key:z6MkkVuVT8b4sQ6hHv8nHJJCBLDL3UTafXDiEH8QxTed2YQM",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkkVuVT8b4sQ6hHv8nHJJCBLDL3UTafXDiEH8QxTed2YQM\"}",
+   "nonce": "1790344980718503342",
+   "sig": "D1QCbUEERPkQGOZzolN_-3oGGvpyNAO74FfFwm_31-3pEWFaYq6UvmhCbiCxy94uuU9ciWIFCfPAI-NcVBlHCw"
+  },
+  {
+   "seq": 306340,
+   "ts": "2026-09-25T14:03:01.201117Z",
+   "from": "did:key:z6Mkgoc6nTsftKxBoLZdfZssxQvbreuANW4oXAcDkTNp3K9o",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6Mkgoc6nTsftKxBoLZdfZssxQvbreuANW4oXAcDkTNp3K9o\"}",
+   "nonce": "1790344980733165056",
+   "sig": "wApmseO9VzyfhS2RrxyrLX1SCDViwNts2BsjHN2psTrqsNJQF4DiNDwC5p43LnuedI0K5lBMMHKY8PauKHQXDw"
+  },
+  {
+   "seq": 306341,
+   "ts": "2026-09-25T14:03:01.219521Z",
+   "from": "did:key:z6MkpDMoVETTnpVXfyP5NuwSod41ArQKU2VPPFC8MSWYFQBM",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkpDMoVETTnpVXfyP5NuwSod41ArQKU2VPPFC8MSWYFQBM\"}",
+   "nonce": "1790344979769454144",
+   "sig": "iZxBe4PArPQv3xHtLQFH5-Ostx0JnVIChd7ncEjnEQUQ2RBP55Id4n-B-MVAd6-jimqeJ2UiDUXNBIbAVrnBDg"
+  },
+  {
+   "seq": 306342,
+   "ts": "2026-09-25T14:03:01.228255Z",
+   "from": "did:key:z6MkutGFYGzAf1XcSLfFcJy14vRECEujS71BEnUhmGWKLr4x",
+   "text": "{\"t\":\"owner\",\"season\":\"close-1\",\"key\":\"did:key:z6MkutGFYGzAf1XcSLfFcJy14vRECEujS71BEnUhmGWKLr4x\"}",
+   "nonce": "1790344980295818044",
+   "sig": "jMl4An_Py0z_W5NYwGiVXXIliRCY5Le6u8DHFgX2RcPLhnqLBF8dYrvLj8STVJV7FJyS_5o5HA8OzZ9jYjLsBA"
+  }
+ ],
+ "referee": [
+  {
+   "room": "d-close1-positions",
+   "record": {
+    "seq": 63,
+    "ts": "2026-09-25T17:16:29.416757Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"ab74e2ebc5f6bdfd39bbf15cd3bd85307555757e6b202e7a6395b19b7cee8057\",\"longs\":10140,\"n\":63,\"open\":\"409116.77\",\"shorts\":10434,\"t\":\"positions\",\"top\":[[\"did:key:z6MkfZzVMvzSRFYJvBjgvHmGtWaqPZPsh16BJ9a5CSEx3ppr\",\"44.52\"],[\"did:key:z6MkpwzAHGSy9CtQ64VTLKyjXAm7XxjsKZBGzsgG1msdC1jo\",\"-44.52\"],[\"did:key:z6MkrWS1QpeQPREbVJv1bVESLhigcqEpy7qvSBdtScXB9GF5\",\"44.51\"],[\"did:key:z6MkuLhsobjeXMbu3vBssLKjtXjDamX8KL8qLnKbTduHq3gB\",\"-44.51\"],[\"did:key:z6MkgKZSjmokZLMk3G8Edq6ra4Vpx21DV2SpRDVSs27thHyM\",\"44.43\"],[\"did:key:z6MkqWDGezFwRstE6V98LozYXYr3FtcNDhtys1SzAkVjDUTx\",\"-44.43\"],[\"did:key:z6MkehiShdUZrbKqKcEYwVqKL1hsBW3rPX6ijK449vpTXEA6\",\"-44.38\"],[\"did:key:z6MkfHFcBTdazarT5mwpS6Yfm1CppmDmKXZTyGXD5QiEaKJK\",\"-44.38\"],[\"did:key:z6MkfuXXYaAyCiNyLgDVbLZxxAdEmVSMVDrWTs8hX2GLoncp\",\"-44.38\"],[\"did:key:z6Mkfx7zB5Rgxfh3AXsswoxg7qBZoMyGfHL4CFhCPeFFQNpi\",\"44.38\"]]}",
+    "nonce": "1790356587937",
+    "sig": "rJQbB7JzKBZ_BFSFE2yu3Vtoutlj45tb_cAB0ZMdUoP1wq3Ga1t0Wv8sAF4nn39N3MGi1Q4gK9oG-cAQoNbVAw"
+   }
+  },
+  {
+   "room": "d-close1-positions",
+   "record": {
+    "seq": 64,
+    "ts": "2026-09-25T17:20:21.185197Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"c5975bc4727c5c8da33235cb1a58f964603a8796c922c371c2004ff847d5e0b3\",\"longs\":10583,\"n\":64,\"open\":\"425829.62\",\"shorts\":10832,\"t\":\"positions\",\"top\":[[\"did:key:z6MkfZzVMvzSRFYJvBjgvHmGtWaqPZPsh16BJ9a5CSEx3ppr\",\"44.52\"],[\"did:key:z6MkpwzAHGSy9CtQ64VTLKyjXAm7XxjsKZBGzsgG1msdC1jo\",\"-44.52\"],[\"did:key:z6MkrWS1QpeQPREbVJv1bVESLhigcqEpy7qvSBdtScXB9GF5\",\"44.51\"],[\"did:key:z6MkuLhsobjeXMbu3vBssLKjtXjDamX8KL8qLnKbTduHq3gB\",\"-44.51\"],[\"did:key:z6MkgKZSjmokZLMk3G8Edq6ra4Vpx21DV2SpRDVSs27thHyM\",\"44.43\"],[\"did:key:z6MkqWDGezFwRstE6V98LozYXYr3FtcNDhtys1SzAkVjDUTx\",\"-44.43\"],[\"did:key:z6MkehiShdUZrbKqKcEYwVqKL1hsBW3rPX6ijK449vpTXEA6\",\"-44.38\"],[\"did:key:z6MkfHFcBTdazarT5mwpS6Yfm1CppmDmKXZTyGXD5QiEaKJK\",\"-44.38\"],[\"did:key:z6MkfuXXYaAyCiNyLgDVbLZxxAdEmVSMVDrWTs8hX2GLoncp\",\"-44.38\"],[\"did:key:z6Mkfx7zB5Rgxfh3AXsswoxg7qBZoMyGfHL4CFhCPeFFQNpi\",\"44.38\"]]}",
+    "nonce": "1790356821134",
+    "sig": "g2y1c-9fLWYtaotPYonNcCGDvE0bFkRvIo0o_S6ChYtwAzGOeYfn1a8TWXGNN20FDVgzAA5U5tY7KTUO4n1gDg"
+   }
+  },
+  {
+   "room": "d-close1-positions",
+   "record": {
+    "seq": 65,
+    "ts": "2026-09-25T17:26:49.550500Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"9c991fca5a4536bf0190177ec43b0d8381e768eb8788e4d69c42c928629a640c\",\"longs\":10981,\"n\":65,\"open\":\"442009.16\",\"shorts\":11225,\"t\":\"positions\",\"top\":[[\"did:key:z6MkfZzVMvzSRFYJvBjgvHmGtWaqPZPsh16BJ9a5CSEx3ppr\",\"44.52\"],[\"did:key:z6MkpwzAHGSy9CtQ64VTLKyjXAm7XxjsKZBGzsgG1msdC1jo\",\"-44.52\"],[\"did:key:z6MkrWS1QpeQPREbVJv1bVESLhigcqEpy7qvSBdtScXB9GF5\",\"44.51\"],[\"did:key:z6MkuLhsobjeXMbu3vBssLKjtXjDamX8KL8qLnKbTduHq3gB\",\"-44.51\"],[\"did:key:z6MkgKZSjmokZLMk3G8Edq6ra4Vpx21DV2SpRDVSs27thHyM\",\"44.43\"],[\"did:key:z6MkqWDGezFwRstE6V98LozYXYr3FtcNDhtys1SzAkVjDUTx\",\"-44.43\"],[\"did:key:z6MkehiShdUZrbKqKcEYwVqKL1hsBW3rPX6ijK449vpTXEA6\",\"-44.38\"],[\"did:key:z6MkfHFcBTdazarT5mwpS6Yfm1CppmDmKXZTyGXD5QiEaKJK\",\"-44.38\"],[\"did:key:z6MkfuXXYaAyCiNyLgDVbLZxxAdEmVSMVDrWTs8hX2GLoncp\",\"-44.38\"],[\"did:key:z6Mkfx7zB5Rgxfh3AXsswoxg7qBZoMyGfHL4CFhCPeFFQNpi\",\"44.38\"]]}",
+    "nonce": "1790357209521",
+    "sig": "K1x1pn-BRyRNKSA0yrDLG6AxLucs1RwP4j2NwlzKqKXxfkUBvyoTeA-mpu9YRAjTz-F0NU5iZtlNiVizmZG-Bw"
+   }
+  },
+  {
+   "room": "d-close1-positions",
+   "record": {
+    "seq": 66,
+    "ts": "2026-09-25T17:31:15.887371Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"674d7a0c03b3a5392d0ef42055620e03198d1e6eebd733dc4cb2c4d0274a29fc\",\"longs\":11000,\"n\":66,\"open\":\"442500.52\",\"shorts\":11245,\"t\":\"positions\",\"top\":[[\"did:key:z6MkfZzVMvzSRFYJvBjgvHmGtWaqPZPsh16BJ9a5CSEx3ppr\",\"44.52\"],[\"did:key:z6MkpwzAHGSy9CtQ64VTLKyjXAm7XxjsKZBGzsgG1msdC1jo\",\"-44.52\"],[\"did:key:z6MkrWS1QpeQPREbVJv1bVESLhigcqEpy7qvSBdtScXB9GF5\",\"44.51\"],[\"did:key:z6MkuLhsobjeXMbu3vBssLKjtXjDamX8KL8qLnKbTduHq3gB\",\"-44.51\"],[\"did:key:z6MkgKZSjmokZLMk3G8Edq6ra4Vpx21DV2SpRDVSs27thHyM\",\"44.43\"],[\"did:key:z6MkqWDGezFwRstE6V98LozYXYr3FtcNDhtys1SzAkVjDUTx\",\"-44.43\"],[\"did:key:z6MkehiShdUZrbKqKcEYwVqKL1hsBW3rPX6ijK449vpTXEA6\",\"-44.38\"],[\"did:key:z6MkfHFcBTdazarT5mwpS6Yfm1CppmDmKXZTyGXD5QiEaKJK\",\"-44.38\"],[\"did:key:z6MkfuXXYaAyCiNyLgDVbLZxxAdEmVSMVDrWTs8hX2GLoncp\",\"-44.38\"],[\"did:key:z6Mkfx7zB5Rgxfh3AXsswoxg7qBZoMyGfHL4CFhCPeFFQNpi\",\"44.38\"]]}",
+    "nonce": "1790357475848",
+    "sig": "P4key9j6t-uiAmFFfBwlHyyMpj3joAphxrgp2ymngyMyHlypLe5EX1xgdr2nawHIA0mnPnHT_k6_K_NymdZyDA"
+   }
+  },
+  {
+   "room": "d-close1-positions",
+   "record": {
+    "seq": 67,
+    "ts": "2026-09-25T17:38:09.579846Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"3affb6f2dba1d1d8ac0d0bf383bd9373d9fbe626025da8e99f5de84e5e28c7cc\",\"longs\":11011,\"n\":67,\"open\":\"442929.65\",\"shorts\":11257,\"t\":\"positions\",\"top\":[[\"did:key:z6MkfZzVMvzSRFYJvBjgvHmGtWaqPZPsh16BJ9a5CSEx3ppr\",\"44.52\"],[\"did:key:z6MkpwzAHGSy9CtQ64VTLKyjXAm7XxjsKZBGzsgG1msdC1jo\",\"-44.52\"],[\"did:key:z6MkrWS1QpeQPREbVJv1bVESLhigcqEpy7qvSBdtScXB9GF5\",\"44.51\"],[\"did:key:z6MkuLhsobjeXMbu3vBssLKjtXjDamX8KL8qLnKbTduHq3gB\",\"-44.51\"],[\"did:key:z6MkgKZSjmokZLMk3G8Edq6ra4Vpx21DV2SpRDVSs27thHyM\",\"44.43\"],[\"did:key:z6MkqWDGezFwRstE6V98LozYXYr3FtcNDhtys1SzAkVjDUTx\",\"-44.43\"],[\"did:key:z6MkehiShdUZrbKqKcEYwVqKL1hsBW3rPX6ijK449vpTXEA6\",\"-44.38\"],[\"did:key:z6MkfHFcBTdazarT5mwpS6Yfm1CppmDmKXZTyGXD5QiEaKJK\",\"-44.38\"],[\"did:key:z6MkfuXXYaAyCiNyLgDVbLZxxAdEmVSMVDrWTs8hX2GLoncp\",\"-44.38\"],[\"did:key:z6Mkfx7zB5Rgxfh3AXsswoxg7qBZoMyGfHL4CFhCPeFFQNpi\",\"44.38\"]]}",
+    "nonce": "1790357889269",
+    "sig": "7C1ZVj1JzhCTtZCK1rL9r9sil_WWFfz0zlcmhgdA_Gy8n6bUJTrT1r_rZ5hno9URaXxIW5nKSdpm4-tnc2tzCQ"
+   }
+  },
+  {
+   "room": "d-close1-positions",
+   "record": {
+    "seq": 68,
+    "ts": "2026-09-25T17:41:05.411438Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"02296801faa45cb28dffecc5dd0ad715ebf4868f7b0b336be94a69a22f041a74\",\"longs\":11182,\"n\":68,\"open\":\"449919.84\",\"shorts\":11427,\"t\":\"positions\",\"top\":[[\"did:key:z6MkfZzVMvzSRFYJvBjgvHmGtWaqPZPsh16BJ9a5CSEx3ppr\",\"44.52\"],[\"did:key:z6MkpwzAHGSy9CtQ64VTLKyjXAm7XxjsKZBGzsgG1msdC1jo\",\"-44.52\"],[\"did:key:z6MkrWS1QpeQPREbVJv1bVESLhigcqEpy7qvSBdtScXB9GF5\",\"44.51\"],[\"did:key:z6MkuLhsobjeXMbu3vBssLKjtXjDamX8KL8qLnKbTduHq3gB\",\"-44.51\"],[\"did:key:z6MkgKZSjmokZLMk3G8Edq6ra4Vpx21DV2SpRDVSs27thHyM\",\"44.43\"],[\"did:key:z6MkqWDGezFwRstE6V98LozYXYr3FtcNDhtys1SzAkVjDUTx\",\"-44.43\"],[\"did:key:z6MkehiShdUZrbKqKcEYwVqKL1hsBW3rPX6ijK449vpTXEA6\",\"-44.38\"],[\"did:key:z6MkfHFcBTdazarT5mwpS6Yfm1CppmDmKXZTyGXD5QiEaKJK\",\"-44.38\"],[\"did:key:z6MkfuXXYaAyCiNyLgDVbLZxxAdEmVSMVDrWTs8hX2GLoncp\",\"-44.38\"],[\"did:key:z6Mkfx7zB5Rgxfh3AXsswoxg7qBZoMyGfHL4CFhCPeFFQNpi\",\"44.38\"]]}",
+    "nonce": "1790358063805",
+    "sig": "_377yXVVHToE_gAFV3K03k9HFLX1XInTZn1IOc26z1mv29EQLjaQdFHlMSqHpMiTq9czOYdE8wMOTCQt1Qd4DQ"
+   }
+  },
+  {
+   "room": "d-close1-pnl",
+   "record": {
+    "seq": 63,
+    "ts": "2026-09-25T17:16:31.732144Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"ab74e2ebc5f6bdfd39bbf15cd3bd85307555757e6b202e7a6395b19b7cee8057\",\"mark\":\"224.60\",\"n\":63,\"t\":\"pnl\",\"top\":[[\"did:key:z6MkgTDg3hEz4pwiFcJCDjRvR3hZbVWwy23oGuqFbFxu7Hne\",\"85.20\"],[\"did:key:z6MkeTcR7He7sY6imuJguhifiNKrWceKNus5HGuajbAwymdK\",\"77.30\"],[\"did:key:z6MkeVj5ofGVVYiBgBL2se7GHN7TkgTPP4vPAJpYB8n5bh3G\",\"77.30\"],[\"did:key:z6Mkedxe1yacwZyNB1tyyuW71PFvU9Y8YDrFmirDrkZ5hZDY\",\"77.30\"],[\"did:key:z6MkeoSLusYXGPJCc85TrHyTkDrePyj1sGdVLZttc5nAKTsP\",\"77.30\"],[\"did:key:z6Mkew4yojP49HTxtU2r2e95oGzUmkQTZSH9ZKwohXRGy6s8\",\"77.30\"],[\"did:key:z6Mkezgo62tneqHnXLnkcejgeT6649seLTd12ZPwehqNvMLt\",\"77.30\"],[\"did:key:z6MkfAgykBeKW5Cvb9pBd3bjmoH135vmk84nXv5Ggzixd8dq\",\"77.30\"],[\"did:key:z6MkfRHaNGkD6yTjFc6CkE4hkdzBqU44xHPXVfxep4bD4yyB\",\"77.30\"],[\"did:key:z6MkfgeJ1W5owZUL8P9CKEQP15jRfwpKUxqz79E8YgtHaB9p\",\"77.30\"],[\"did:key:z6Mkg7L5tA562LdL4nHZjES9aiF2kMDf6VGx3Rtz1NKwEvE9\",\"77.30\"],[\"did:key:z6MkgDAkV9H8ECr68PipsZTrKmgVeNVyzDrXhFop2JoYPiXz\",\"77.30\"],[\"did:key:z6MkgF6CTM88maYBeesrz3jMECCsC6mqpBG4XimQcJ5BiaYt\",\"77.30\"],[\"did:key:z6MkgGHxNXYrXRHGpc7rTuYo6UJbQkoh5TWmoea5WeSA8THn\",\"77.30\"],[\"did:key:z6MkgguZoEHtR9swFUBijm35pzsHu6VSu6ZYnCg38WRVSiE5\",\"77.30\"],[\"did:key:z6MkgoNezyKCRpF5Z71dS4HYR7QJtSs58a9BQhb1trHKKYJY\",\"77.30\"],[\"did:key:z6Mkgp6WNy2MEtp3ZzSyHpkagTojFNcWAwtfyt8M8jZMBQck\",\"77.30\"],[\"did:key:z6MkgyCCpopSUaXjarCQCVayeLjnQLQAxwGVN4MMpqMiEXFQ\",\"77.30\"],[\"did:key:z6MkhPcuhogTU98s4VqRHrvhn7HMuCzTKuML1zMZsyRGqWL7\",\"77.30\"],[\"did:key:z6MkhVREfWiBKPad4zmnJPEYcTC5c1HzvmGkHeJZ43tUCyfU\",\"77.30\"],[\"did:key:z6Mkhbot1qH7PE3JQHt4sbYDt6AX6Db2k34MkPmi9J9Q3Chb\",\"77.30\"],[\"did:key:z6MkhjcydAB42SNUjgGWHu2cvhSn3kqiYgLVBgUBpnTu2fEj\",\"77.30\"],[\"did:key:z6MkhkKGz5VvkFchUSpRURnXe3TAxfPAKFQa4Lm9hh2v4oXS\",\"77.30\"],[\"did:key:z6Mkhn51ebeDjWr3uT96cWBQTDAL2e9YVMNEdEu8L6BcAzcj\",\"77.30\"],[\"did:key:z6MkhtLNH1boKRN7hwjjnuwiJ7PCUQQThiDiY4VHcg58pkK3\",\"77.30\"]]}",
+    "nonce": "1790356589546",
+    "sig": "6R8HBuHqrdbfBCsNoAUUxjsqpTj577p8flfDu3qnaQoOFGXV6U5TptwMLKRgzncdrDOMcZNlGPHIraHaWfytCA"
+   }
+  },
+  {
+   "room": "d-close1-pnl",
+   "record": {
+    "seq": 64,
+    "ts": "2026-09-25T17:20:21.320627Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"c5975bc4727c5c8da33235cb1a58f964603a8796c922c371c2004ff847d5e0b3\",\"mark\":\"224.83\",\"n\":64,\"t\":\"pnl\",\"top\":[[\"did:key:z6MkgTDg3hEz4pwiFcJCDjRvR3hZbVWwy23oGuqFbFxu7Hne\",\"75.60\"],[\"did:key:z6MkeTcR7He7sY6imuJguhifiNKrWceKNus5HGuajbAwymdK\",\"67.66\"],[\"did:key:z6MkeVj5ofGVVYiBgBL2se7GHN7TkgTPP4vPAJpYB8n5bh3G\",\"67.66\"],[\"did:key:z6Mkedxe1yacwZyNB1tyyuW71PFvU9Y8YDrFmirDrkZ5hZDY\",\"67.66\"],[\"did:key:z6MkeoSLusYXGPJCc85TrHyTkDrePyj1sGdVLZttc5nAKTsP\",\"67.66\"],[\"did:key:z6Mkew4yojP49HTxtU2r2e95oGzUmkQTZSH9ZKwohXRGy6s8\",\"67.66\"],[\"did:key:z6Mkezgo62tneqHnXLnkcejgeT6649seLTd12ZPwehqNvMLt\",\"67.66\"],[\"did:key:z6MkfAgykBeKW5Cvb9pBd3bjmoH135vmk84nXv5Ggzixd8dq\",\"67.66\"],[\"did:key:z6MkfRHaNGkD6yTjFc6CkE4hkdzBqU44xHPXVfxep4bD4yyB\",\"67.66\"],[\"did:key:z6MkfgeJ1W5owZUL8P9CKEQP15jRfwpKUxqz79E8YgtHaB9p\",\"67.66\"],[\"did:key:z6Mkg7L5tA562LdL4nHZjES9aiF2kMDf6VGx3Rtz1NKwEvE9\",\"67.66\"],[\"did:key:z6MkgDAkV9H8ECr68PipsZTrKmgVeNVyzDrXhFop2JoYPiXz\",\"67.66\"],[\"did:key:z6MkgF6CTM88maYBeesrz3jMECCsC6mqpBG4XimQcJ5BiaYt\",\"67.66\"],[\"did:key:z6MkgGHxNXYrXRHGpc7rTuYo6UJbQkoh5TWmoea5WeSA8THn\",\"67.66\"],[\"did:key:z6MkgguZoEHtR9swFUBijm35pzsHu6VSu6ZYnCg38WRVSiE5\",\"67.66\"],[\"did:key:z6MkgoNezyKCRpF5Z71dS4HYR7QJtSs58a9BQhb1trHKKYJY\",\"67.66\"],[\"did:key:z6Mkgp6WNy2MEtp3ZzSyHpkagTojFNcWAwtfyt8M8jZMBQck\",\"67.66\"],[\"did:key:z6MkgyCCpopSUaXjarCQCVayeLjnQLQAxwGVN4MMpqMiEXFQ\",\"67.66\"],[\"did:key:z6MkhPcuhogTU98s4VqRHrvhn7HMuCzTKuML1zMZsyRGqWL7\",\"67.66\"],[\"did:key:z6MkhVREfWiBKPad4zmnJPEYcTC5c1HzvmGkHeJZ43tUCyfU\",\"67.66\"],[\"did:key:z6Mkhbot1qH7PE3JQHt4sbYDt6AX6Db2k34MkPmi9J9Q3Chb\",\"67.66\"],[\"did:key:z6MkhjcydAB42SNUjgGWHu2cvhSn3kqiYgLVBgUBpnTu2fEj\",\"67.66\"],[\"did:key:z6MkhkKGz5VvkFchUSpRURnXe3TAxfPAKFQa4Lm9hh2v4oXS\",\"67.66\"],[\"did:key:z6Mkhn51ebeDjWr3uT96cWBQTDAL2e9YVMNEdEu8L6BcAzcj\",\"67.66\"],[\"did:key:z6MkhtLNH1boKRN7hwjjnuwiJ7PCUQQThiDiY4VHcg58pkK3\",\"67.66\"]]}",
+    "nonce": "1790356821274",
+    "sig": "7HoA2Jjjf2v8B_btjdGmK538KZGzrm6brJHG2vBRor3T9-Te5M79tmzXeH4tLpsU80mzES_QycYmu7PbrgclBQ"
+   }
+  },
+  {
+   "room": "d-close1-pnl",
+   "record": {
+    "seq": 65,
+    "ts": "2026-09-25T17:26:49.924641Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"9c991fca5a4536bf0190177ec43b0d8381e768eb8788e4d69c42c928629a640c\",\"mark\":\"224.98\",\"n\":65,\"t\":\"pnl\",\"top\":[[\"did:key:z6MkgTDg3hEz4pwiFcJCDjRvR3hZbVWwy23oGuqFbFxu7Hne\",\"69.48\"],[\"did:key:z6MkeTcR7He7sY6imuJguhifiNKrWceKNus5HGuajbAwymdK\",\"61.51\"],[\"did:key:z6MkeVj5ofGVVYiBgBL2se7GHN7TkgTPP4vPAJpYB8n5bh3G\",\"61.51\"],[\"did:key:z6Mkedxe1yacwZyNB1tyyuW71PFvU9Y8YDrFmirDrkZ5hZDY\",\"61.51\"],[\"did:key:z6MkeoSLusYXGPJCc85TrHyTkDrePyj1sGdVLZttc5nAKTsP\",\"61.51\"],[\"did:key:z6Mkew4yojP49HTxtU2r2e95oGzUmkQTZSH9ZKwohXRGy6s8\",\"61.51\"],[\"did:key:z6Mkezgo62tneqHnXLnkcejgeT6649seLTd12ZPwehqNvMLt\",\"61.51\"],[\"did:key:z6MkfAgykBeKW5Cvb9pBd3bjmoH135vmk84nXv5Ggzixd8dq\",\"61.51\"],[\"did:key:z6MkfRHaNGkD6yTjFc6CkE4hkdzBqU44xHPXVfxep4bD4yyB\",\"61.51\"],[\"did:key:z6MkfgeJ1W5owZUL8P9CKEQP15jRfwpKUxqz79E8YgtHaB9p\",\"61.51\"],[\"did:key:z6Mkg7L5tA562LdL4nHZjES9aiF2kMDf6VGx3Rtz1NKwEvE9\",\"61.51\"],[\"did:key:z6MkgDAkV9H8ECr68PipsZTrKmgVeNVyzDrXhFop2JoYPiXz\",\"61.51\"],[\"did:key:z6MkgF6CTM88maYBeesrz3jMECCsC6mqpBG4XimQcJ5BiaYt\",\"61.51\"],[\"did:key:z6MkgGHxNXYrXRHGpc7rTuYo6UJbQkoh5TWmoea5WeSA8THn\",\"61.51\"],[\"did:key:z6MkgguZoEHtR9swFUBijm35pzsHu6VSu6ZYnCg38WRVSiE5\",\"61.51\"],[\"did:key:z6MkgoNezyKCRpF5Z71dS4HYR7QJtSs58a9BQhb1trHKKYJY\",\"61.51\"],[\"did:key:z6Mkgp6WNy2MEtp3ZzSyHpkagTojFNcWAwtfyt8M8jZMBQck\",\"61.51\"],[\"did:key:z6MkgyCCpopSUaXjarCQCVayeLjnQLQAxwGVN4MMpqMiEXFQ\",\"61.51\"],[\"did:key:z6MkhPcuhogTU98s4VqRHrvhn7HMuCzTKuML1zMZsyRGqWL7\",\"61.51\"],[\"did:key:z6MkhVREfWiBKPad4zmnJPEYcTC5c1HzvmGkHeJZ43tUCyfU\",\"61.51\"],[\"did:key:z6Mkhbot1qH7PE3JQHt4sbYDt6AX6Db2k34MkPmi9J9Q3Chb\",\"61.51\"],[\"did:key:z6MkhjcydAB42SNUjgGWHu2cvhSn3kqiYgLVBgUBpnTu2fEj\",\"61.51\"],[\"did:key:z6MkhkKGz5VvkFchUSpRURnXe3TAxfPAKFQa4Lm9hh2v4oXS\",\"61.51\"],[\"did:key:z6Mkhn51ebeDjWr3uT96cWBQTDAL2e9YVMNEdEu8L6BcAzcj\",\"61.51\"],[\"did:key:z6MkhtLNH1boKRN7hwjjnuwiJ7PCUQQThiDiY4VHcg58pkK3\",\"61.51\"]]}",
+    "nonce": "1790357209878",
+    "sig": "KlaGQNbe--6Hyx4r6jLJxZ4agzkXaRlGDAuxYKQl0pqu2gOFpfwN8K_7IuPZ-3KiKMkX-0GoP2eDLGOAApqmDg"
+   }
+  },
+  {
+   "room": "d-close1-pnl",
+   "record": {
+    "seq": 66,
+    "ts": "2026-09-25T17:31:16.028548Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"674d7a0c03b3a5392d0ef42055620e03198d1e6eebd733dc4cb2c4d0274a29fc\",\"mark\":\"224.82\",\"n\":66,\"t\":\"pnl\",\"top\":[[\"did:key:z6MkgTDg3hEz4pwiFcJCDjRvR3hZbVWwy23oGuqFbFxu7Hne\",\"76.35\"],[\"did:key:z6MkeTcR7He7sY6imuJguhifiNKrWceKNus5HGuajbAwymdK\",\"68.41\"],[\"did:key:z6MkeVj5ofGVVYiBgBL2se7GHN7TkgTPP4vPAJpYB8n5bh3G\",\"68.41\"],[\"did:key:z6Mkedxe1yacwZyNB1tyyuW71PFvU9Y8YDrFmirDrkZ5hZDY\",\"68.41\"],[\"did:key:z6MkeoSLusYXGPJCc85TrHyTkDrePyj1sGdVLZttc5nAKTsP\",\"68.41\"],[\"did:key:z6Mkew4yojP49HTxtU2r2e95oGzUmkQTZSH9ZKwohXRGy6s8\",\"68.41\"],[\"did:key:z6Mkezgo62tneqHnXLnkcejgeT6649seLTd12ZPwehqNvMLt\",\"68.41\"],[\"did:key:z6MkfAgykBeKW5Cvb9pBd3bjmoH135vmk84nXv5Ggzixd8dq\",\"68.41\"],[\"did:key:z6MkfRHaNGkD6yTjFc6CkE4hkdzBqU44xHPXVfxep4bD4yyB\",\"68.41\"],[\"did:key:z6MkfgeJ1W5owZUL8P9CKEQP15jRfwpKUxqz79E8YgtHaB9p\",\"68.41\"],[\"did:key:z6Mkg7L5tA562LdL4nHZjES9aiF2kMDf6VGx3Rtz1NKwEvE9\",\"68.41\"],[\"did:key:z6MkgDAkV9H8ECr68PipsZTrKmgVeNVyzDrXhFop2JoYPiXz\",\"68.41\"],[\"did:key:z6MkgF6CTM88maYBeesrz3jMECCsC6mqpBG4XimQcJ5BiaYt\",\"68.41\"],[\"did:key:z6MkgGHxNXYrXRHGpc7rTuYo6UJbQkoh5TWmoea5WeSA8THn\",\"68.41\"],[\"did:key:z6MkgguZoEHtR9swFUBijm35pzsHu6VSu6ZYnCg38WRVSiE5\",\"68.41\"],[\"did:key:z6MkgoNezyKCRpF5Z71dS4HYR7QJtSs58a9BQhb1trHKKYJY\",\"68.41\"],[\"did:key:z6Mkgp6WNy2MEtp3ZzSyHpkagTojFNcWAwtfyt8M8jZMBQck\",\"68.41\"],[\"did:key:z6MkgyCCpopSUaXjarCQCVayeLjnQLQAxwGVN4MMpqMiEXFQ\",\"68.41\"],[\"did:key:z6MkhPcuhogTU98s4VqRHrvhn7HMuCzTKuML1zMZsyRGqWL7\",\"68.41\"],[\"did:key:z6MkhVREfWiBKPad4zmnJPEYcTC5c1HzvmGkHeJZ43tUCyfU\",\"68.41\"],[\"did:key:z6Mkhbot1qH7PE3JQHt4sbYDt6AX6Db2k34MkPmi9J9Q3Chb\",\"68.41\"],[\"did:key:z6MkhjcydAB42SNUjgGWHu2cvhSn3kqiYgLVBgUBpnTu2fEj\",\"68.41\"],[\"did:key:z6MkhkKGz5VvkFchUSpRURnXe3TAxfPAKFQa4Lm9hh2v4oXS\",\"68.41\"],[\"did:key:z6Mkhn51ebeDjWr3uT96cWBQTDAL2e9YVMNEdEu8L6BcAzcj\",\"68.41\"],[\"did:key:z6MkhtLNH1boKRN7hwjjnuwiJ7PCUQQThiDiY4VHcg58pkK3\",\"68.41\"]]}",
+    "nonce": "1790357475993",
+    "sig": "GgQdTl-GrLX2vpuH3J2YObInI4Xv3eqdFXylbdmToKDd3wyCrLKrIktVQiLChvaXD8Veqqyijmn5GGwDyBvtDw"
+   }
+  },
+  {
+   "room": "d-close1-pnl",
+   "record": {
+    "seq": 67,
+    "ts": "2026-09-25T17:38:09.693753Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"3affb6f2dba1d1d8ac0d0bf383bd9373d9fbe626025da8e99f5de84e5e28c7cc\",\"mark\":\"225.04\",\"n\":67,\"t\":\"pnl\",\"top\":[[\"did:key:z6MkgTDg3hEz4pwiFcJCDjRvR3hZbVWwy23oGuqFbFxu7Hne\",\"66.89\"],[\"did:key:z6MkeTcR7He7sY6imuJguhifiNKrWceKNus5HGuajbAwymdK\",\"58.91\"],[\"did:key:z6MkeVj5ofGVVYiBgBL2se7GHN7TkgTPP4vPAJpYB8n5bh3G\",\"58.91\"],[\"did:key:z6Mkedxe1yacwZyNB1tyyuW71PFvU9Y8YDrFmirDrkZ5hZDY\",\"58.91\"],[\"did:key:z6MkeoSLusYXGPJCc85TrHyTkDrePyj1sGdVLZttc5nAKTsP\",\"58.91\"],[\"did:key:z6Mkew4yojP49HTxtU2r2e95oGzUmkQTZSH9ZKwohXRGy6s8\",\"58.91\"],[\"did:key:z6Mkezgo62tneqHnXLnkcejgeT6649seLTd12ZPwehqNvMLt\",\"58.91\"],[\"did:key:z6MkfAgykBeKW5Cvb9pBd3bjmoH135vmk84nXv5Ggzixd8dq\",\"58.91\"],[\"did:key:z6MkfRHaNGkD6yTjFc6CkE4hkdzBqU44xHPXVfxep4bD4yyB\",\"58.91\"],[\"did:key:z6MkfgeJ1W5owZUL8P9CKEQP15jRfwpKUxqz79E8YgtHaB9p\",\"58.91\"],[\"did:key:z6Mkg7L5tA562LdL4nHZjES9aiF2kMDf6VGx3Rtz1NKwEvE9\",\"58.91\"],[\"did:key:z6MkgDAkV9H8ECr68PipsZTrKmgVeNVyzDrXhFop2JoYPiXz\",\"58.91\"],[\"did:key:z6MkgF6CTM88maYBeesrz3jMECCsC6mqpBG4XimQcJ5BiaYt\",\"58.91\"],[\"did:key:z6MkgGHxNXYrXRHGpc7rTuYo6UJbQkoh5TWmoea5WeSA8THn\",\"58.91\"],[\"did:key:z6MkgguZoEHtR9swFUBijm35pzsHu6VSu6ZYnCg38WRVSiE5\",\"58.91\"],[\"did:key:z6MkgoNezyKCRpF5Z71dS4HYR7QJtSs58a9BQhb1trHKKYJY\",\"58.91\"],[\"did:key:z6Mkgp6WNy2MEtp3ZzSyHpkagTojFNcWAwtfyt8M8jZMBQck\",\"58.91\"],[\"did:key:z6MkgyCCpopSUaXjarCQCVayeLjnQLQAxwGVN4MMpqMiEXFQ\",\"58.91\"],[\"did:key:z6MkhPcuhogTU98s4VqRHrvhn7HMuCzTKuML1zMZsyRGqWL7\",\"58.91\"],[\"did:key:z6MkhVREfWiBKPad4zmnJPEYcTC5c1HzvmGkHeJZ43tUCyfU\",\"58.91\"],[\"did:key:z6Mkhbot1qH7PE3JQHt4sbYDt6AX6Db2k34MkPmi9J9Q3Chb\",\"58.91\"],[\"did:key:z6MkhjcydAB42SNUjgGWHu2cvhSn3kqiYgLVBgUBpnTu2fEj\",\"58.91\"],[\"did:key:z6MkhkKGz5VvkFchUSpRURnXe3TAxfPAKFQa4Lm9hh2v4oXS\",\"58.91\"],[\"did:key:z6Mkhn51ebeDjWr3uT96cWBQTDAL2e9YVMNEdEu8L6BcAzcj\",\"58.91\"],[\"did:key:z6MkhtLNH1boKRN7hwjjnuwiJ7PCUQQThiDiY4VHcg58pkK3\",\"58.91\"]]}",
+    "nonce": "1790357889656",
+    "sig": "NEcGxEGheA2Qyq4FtGGp0z5HXIF7kazKSjo83ZoVI04pWi5EAMlmsxIRahKJ5kHQxLIm5D3BdcjcTpT1xzajDA"
+   }
+  },
+  {
+   "room": "d-close1-pnl",
+   "record": {
+    "seq": 68,
+    "ts": "2026-09-25T17:41:09.028956Z",
+    "from": "did:key:z6MkowHQwsx9xr84WbWN3YCnKutyBnBXkT1ChKY4uEAAMzte",
+    "text": "{\"file\":\"02296801faa45cb28dffecc5dd0ad715ebf4868f7b0b336be94a69a22f041a74\",\"mark\":\"223.45\",\"n\":68,\"t\":\"pnl\",\"top\":[[\"did:key:z6MkgTDg3hEz4pwiFcJCDjRvR3hZbVWwy23oGuqFbFxu7Hne\",\"133.11\"],[\"did:key:z6MkeTcR7He7sY6imuJguhifiNKrWceKNus5HGuajbAwymdK\",\"125.40\"],[\"did:key:z6MkeVj5ofGVVYiBgBL2se7GHN7TkgTPP4vPAJpYB8n5bh3G\",\"125.40\"],[\"did:key:z6Mkedxe1yacwZyNB1tyyuW71PFvU9Y8YDrFmirDrkZ5hZDY\",\"125.40\"],[\"did:key:z6MkeoSLusYXGPJCc85TrHyTkDrePyj1sGdVLZttc5nAKTsP\",\"125.40\"],[\"did:key:z6Mkew4yojP49HTxtU2r2e95oGzUmkQTZSH9ZKwohXRGy6s8\",\"125.40\"],[\"did:key:z6Mkezgo62tneqHnXLnkcejgeT6649seLTd12ZPwehqNvMLt\",\"125.40\"],[\"did:key:z6MkfAgykBeKW5Cvb9pBd3bjmoH135vmk84nXv5Ggzixd8dq\",\"125.40\"],[\"did:key:z6MkfRHaNGkD6yTjFc6CkE4hkdzBqU44xHPXVfxep4bD4yyB\",\"125.40\"],[\"did:key:z6MkfgeJ1W5owZUL8P9CKEQP15jRfwpKUxqz79E8YgtHaB9p\",\"125.40\"],[\"did:key:z6Mkg7L5tA562LdL4nHZjES9aiF2kMDf6VGx3Rtz1NKwEvE9\",\"125.40\"],[\"did:key:z6MkgDAkV9H8ECr68PipsZTrKmgVeNVyzDrXhFop2JoYPiXz\",\"125.40\"],[\"did:key:z6MkgF6CTM88maYBeesrz3jMECCsC6mqpBG4XimQcJ5BiaYt\",\"125.40\"],[\"did:key:z6MkgGHxNXYrXRHGpc7rTuYo6UJbQkoh5TWmoea5WeSA8THn\",\"125.40\"],[\"did:key:z6MkgguZoEHtR9swFUBijm35pzsHu6VSu6ZYnCg38WRVSiE5\",\"125.40\"],[\"did:key:z6MkgoNezyKCRpF5Z71dS4HYR7QJtSs58a9BQhb1trHKKYJY\",\"125.40\"],[\"did:key:z6Mkgp6WNy2MEtp3ZzSyHpkagTojFNcWAwtfyt8M8jZMBQck\",\"125.40\"],[\"did:key:z6MkgyCCpopSUaXjarCQCVayeLjnQLQAxwGVN4MMpqMiEXFQ\",\"125.40\"],[\"did:key:z6MkhPcuhogTU98s4VqRHrvhn7HMuCzTKuML1zMZsyRGqWL7\",\"125.40\"],[\"did:key:z6MkhVREfWiBKPad4zmnJPEYcTC5c1HzvmGkHeJZ43tUCyfU\",\"125.40\"],[\"did:key:z6Mkhbot1qH7PE3JQHt4sbYDt6AX6Db2k34MkPmi9J9Q3Chb\",\"125.40\"],[\"did:key:z6MkhjcydAB42SNUjgGWHu2cvhSn3kqiYgLVBgUBpnTu2fEj\",\"125.40\"],[\"did:key:z6MkhkKGz5VvkFchUSpRURnXe3TAxfPAKFQa4Lm9hh2v4oXS\",\"125.40\"],[\"did:key:z6Mkhn51ebeDjWr3uT96cWBQTDAL2e9YVMNEdEu8L6BcAzcj\",\"125.40\"],[\"did:key:z6MkhtLNH1boKRN7hwjjnuwiJ7PCUQQThiDiY4VHcg58pkK3\",\"125.40\"]]}",
+    "nonce": "1790358068968",
+    "sig": "y607pPe169fZuQKqjPiYIHpBmHl--uPuug1rSi5aC9-u9tys7sTqgkKFiveOQYaAjCrKPSrq6YASALHwfAHWAQ"
+   }
+  }
+ ],
+ "keys": [
+  {
+   "seed_hex": "05101b26313c47525d68737e89949faab5c0cbd6e1ecf7020d18232e39444f5a",
+   "seed_b64u": "BRAbJjE8R1JdaHN-iZSfqrXAy9bh7PcCDRgjLjlET1o",
+   "secret64_hex": "05101b26313c47525d68737e89949faab5c0cbd6e1ecf7020d18232e39444f5a9ca0da86726d8282ce4e0719df6d1f4db2902bdfe78632ac4890d0b9a8e38e27",
+   "did": "did:key:z6MkpzfuWK75xJ4UGwaz4K8ZQA7TGNSbE2FUi5XiFH3cLzb8",
+   "jwk": {
+    "kty": "OKP",
+    "crv": "Ed25519",
+    "d": "BRAbJjE8R1JdaHN-iZSfqrXAy9bh7PcCDRgjLjlET1o",
+    "x": "nKDahnJtgoLOTgcZ320fTbKQK9_nhjKsSJDQuajjjic"
+   },
+   "signatures": [
+    {
+     "message": "close-1|terms|{\"id\":\"x\"}",
+     "sig": "zY4-l0afJO2yLr8qv-dX_YFDbaUjIUNfBeo5QcqKAC3XX5ll8HfAjd7W8C4tGG5OWWn5SFk8WI2MEfiYOGnoBA"
+    },
+    {
+     "message": "close1|1790000000000000|{\"t\":\"owner\"}",
+     "sig": "_pFZ3gw3lWY03PmJzfPRXGbfpbZtMVhwXWlGxcLDkDH7wDzISYMIGuND1zHSEhH11gFyrq2K8q5vRaNqFF7eAA"
+    },
+    {
+     "message": "Türkçe ğüşiöç",
+     "sig": "pfERcF_jCKsNHCvwwg5wCsWnSvN--6HO54ovmPbTRC8Z5cXAqohfyGEbc0bxQOq8Gh6-sfcEr6vooJN4x4Y2AA"
+    }
+   ]
+  },
+  {
+   "seed_hex": "2a35404b56616c77828d98a3aeb9c4cfdae5f0fb06111c27323d48535e69747f",
+   "seed_b64u": "KjVAS1ZhbHeCjZijrrnEz9rl8PsGERwnMj1IU15pdH8",
+   "secret64_hex": "2a35404b56616c77828d98a3aeb9c4cfdae5f0fb06111c27323d48535e69747fa4b5c914e53a48dbc02f8f01fcb35389362a585d420a9b73f3a12226c8ceeef0",
+   "did": "did:key:z6MkqYDgPTscqZZenYv8nPVLRGYCzr6iQvcYrqowyik9wAGw",
+   "jwk": {
+    "kty": "OKP",
+    "crv": "Ed25519",
+    "d": "KjVAS1ZhbHeCjZijrrnEz9rl8PsGERwnMj1IU15pdH8",
+    "x": "pLXJFOU6SNvAL48B_LNTiTYqWF1CCptz86EiJsjO7vA"
+   },
+   "signatures": [
+    {
+     "message": "close-1|terms|{\"id\":\"x\"}",
+     "sig": "8spM2k2hBd1eXpH8AWokTgDr2lz_-k_2igdTb_l_-ysdXU-3QHOQIb_GwWZSARAKLCoULrhSnvUEiubcQWpKBA"
+    },
+    {
+     "message": "close1|1790000000000001|{\"t\":\"owner\"}",
+     "sig": "sBndWSPCcqB-xdZByaekCltZwkFALJAYTdI6RqQuGvVLNxfWDr4H4biSSuTTKyb4uMcw8PipGMAiSo1aeAOzBg"
+    },
+    {
+     "message": "Türkçe ğüşiöç",
+     "sig": "hKHpjksvHUAlrIAk6zovoGq1rWcQhA37dqJl3ipT8I2i4QlFEDhA_ws7E6lr3u_wQH9i3pogwl_jIH5o_pnyBw"
+    }
+   ]
+  },
+  {
+   "seed_hex": "4f5a65707b86919ca7b2bdc8d3dee9f4ff0a15202b36414c57626d78838e99a4",
+   "seed_b64u": "T1plcHuGkZynsr3I097p9P8KFSArNkFMV2JteIOOmaQ",
+   "secret64_hex": "4f5a65707b86919ca7b2bdc8d3dee9f4ff0a15202b36414c57626d78838e99a4bbb3301710ac7545ad7b2215ac1033c709b344479b401ed94a1a5e843e5c1d47",
+   "did": "did:key:z6Mks5xm1ZoJH3hWZ7NfboTvmGzhnQJHSpgQZ1qbGwLFe3eN",
+   "jwk": {
+    "kty": "OKP",
+    "crv": "Ed25519",
+    "d": "T1plcHuGkZynsr3I097p9P8KFSArNkFMV2JteIOOmaQ",
+    "x": "u7MwFxCsdUWteyIVrBAzxwmzREebQB7ZShpehD5cHUc"
+   },
+   "signatures": [
+    {
+     "message": "close-1|terms|{\"id\":\"x\"}",
+     "sig": "AOTOr5CfJjxuXxB7mcBXIv6pKnNlKC45bgC_p95AuizqJDw_aNOwRmKn2rI8kU9xjj3tnQIqe1zEEi6zci4bCQ"
+    },
+    {
+     "message": "close1|1790000000000002|{\"t\":\"owner\"}",
+     "sig": "K19PPrlzNdL9HoWeQBVpPzSEvJXS6ARGo73Knfauo9a3pJsd6Oz7dzwnr-UavxbX54yxZ2U8Ne62s-69H-fnCQ"
+    },
+    {
+     "message": "Türkçe ğüşiöç",
+     "sig": "odGkjJ4iIKae5RjibDQEwPQ719PO2pmBK0m0zNZti5werH5myyL7fXmQ1nAHAyXfMUNd6f7DFEDhvVZKp2AoAQ"
+    }
+   ]
+  },
+  {
+   "seed_hex": "747f8a95a0abb6c1ccd7e2edf8030e19242f3a45505b66717c87929da8b3bec9",
+   "seed_b64u": "dH-KlaCrtsHM1-Lt-AMOGSQvOkVQW2ZxfIeSnaizvsk",
+   "secret64_hex": "747f8a95a0abb6c1ccd7e2edf8030e19242f3a45505b66717c87929da8b3bec9f816a7a524f87b8a7358ab39745e4cb8e856ce4d862f3c1549d83cba5fa15e93",
+   "did": "did:key:z6Mkw9hC1S7EQpJqbUBCrc5yECBEUKXjNHaSLuhiQbPBN6An",
+   "jwk": {
+    "kty": "OKP",
+    "crv": "Ed25519",
+    "d": "dH-KlaCrtsHM1-Lt-AMOGSQvOkVQW2ZxfIeSnaizvsk",
+    "x": "-BanpST4e4pzWKs5dF5MuOhWzk2GLzwVSdg8ul-hXpM"
+   },
+   "signatures": [
+    {
+     "message": "close-1|terms|{\"id\":\"x\"}",
+     "sig": "ec5tnd58bJYi5RN4gnslgCbT4l678Eq0ekUAklp34JVRtbI4tuHyxSsTXcq8iru-rc4bvw2OYxARXZEKTAKJBQ"
+    },
+    {
+     "message": "close1|1790000000000003|{\"t\":\"owner\"}",
+     "sig": "NCllwKQhsUPYca7WygKtOb9zYyFiX1nX5pAu1MyyC-NQk_RvP07IYTamwPr4SOPJYJnQNnd-BmaCcYLZoQbmDA"
+    },
+    {
+     "message": "Türkçe ğüşiöç",
+     "sig": "HUu-4sMdxXpGQvdf1OU6SH1uULjxIpfkE0AzrbgfjzQ9XzhQxNozIiQ008UwXNjYRy7j28dfhMK3r981_5DJDQ"
+    }
+   ]
+  }
+ ]
+}

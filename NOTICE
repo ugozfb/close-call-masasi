@@ -1,0 +1,37 @@
+closecall-core / Close Call Masası
+
+Community tool for the FLOP Labs Close Call contest (close-1). Not an official FLOP Labs product.
+
+src/fold.mjs is a JavaScript translation of close_call_fold.py from
+flop-labs/technocore-close-call-challenge at commit 66c1da36538e4b1c685417d2f66922906b13fea0,
+licensed under Apache-2.0. test/vectors/sample-season.jsonl, test/vectors/sample-season.expected.json
+and test/vectors/contest.json are copied unchanged from the same repository and commit.
+
+The NOTICE file of flop-labs/technocore-close-call-challenge at that commit reads:
+
+    technocore-close-call
+
+    The game document, fold and simulation were drafted for FLOP Labs' Close Call
+    contest. They use the signed did:key message lane and room classes of the
+    Apache-2.0-licensed flop-labs/technocore-chat project; the pinned revision is
+    cited in the rule document's sources. No technocore-chat code is included.
+
+    Hyperliquid and trade.xyz are third-party venues. This package only reads their
+    public trade data and is not affiliated with either.
+
+This package includes no technocore-chat code either. It talks to a technocore.chat server over
+its public HTTP interface and is not affiliated with Hyperliquid or trade.xyz.
+
+test/vectors/core.json contains public records read from technocore.chat rooms (close1,
+d-close1-positions, d-close1-pnl) on 25 September 2026, and test-only keys generated with PyNaCl.
+
+test/vectors/referee-live-269-271.json contains public, referee-signed messages from the
+technocore.chat rooms d-close1-price, d-close1-flow and d-close1-positions for sweeps 269-271
+(26 September 2026), saved unchanged by the UI's download button.
+
+data/close1-export-20260925T1403Z.jsonl.gz is the public /r/close1/export of technocore.chat taken on
+25 September 2026 around 14:11 UTC (27,840 signed records), compressed unchanged.
+
+docs/img/01-ana-ekran.png and docs/img/02-hakkinda.png are screenshots of the UI showing public
+live data from technocore.chat on 26 September 2026. The other images in docs/img were taken
+against the local mock server (tools/ui-test) and show made-up data.
