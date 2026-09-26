@@ -1,0 +1,27 @@
+# Anahtar dosyaları asla depoya girmez / key files never go into the repo
+*private-key*.json
+*private*key*.json
+anahtar*.json
+ANAHTAR*.json
+*.jwk
+*.seed
+test-key*.json
+
+# Komut satırının yerel kayıtları / local CLI records
+kayitlar.jsonl
+closecall-nonce.json
+teklif-*.json
+metin*.txt
+imza*.txt
+
+# Tarayıcıdan indirilen kanıt ve hakem dosyaları / downloads from the UI
+closecall-kanit*.jsonl
+hakem-mesajlari*.json
+
+# Geliştirme / development
+node_modules/
+__pycache__/
+*.pyc
+.DS_Store
+Thumbs.db
+desktop.ini
