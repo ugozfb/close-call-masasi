@@ -1,5 +1,12 @@
 # Değişiklikler
 
+## v0.3.5 (27 Eylül 2026, komut satırı)
+
+1. **Bilerek kendinle işlem: `kabul --kendinle`.** Kural 12 aynı anahtarın iki tarafta olduğu işlemi tanımlıyor: iki tarafın ücreti ödenir, pozisyon değişmez, hakem yalnız ücretlerin karşılanıp karşılanmadığına bakar. Kendi teklifini kabul etmek yalnız bu bayrakla açılır; bayraksız komut ve arayüz eskisi gibi reddeder. Kullanım amacı hesabın bakiyesini karşı taraftan bağımsız sınamak.
+2. **İşlem sonucunu okuma: `durum --id <işlem-id>`.** Bu klasörden gönderilen işlemin zamanını `kayitlar.jsonl`'den alır (ya da `--zaman <ISO>`), hakem akışında settled / ≈ settled / void / bekleniyor / bilinmiyor olarak gösterir. 269. turun gerçek hakem mesajlarıyla denendi.
+3. **Test:** kendinle işlem testi eklendi (resmî fold'un kopyasında settled, pozisyon 0, ücret 0,44906 POLF). 21 test.
+4. **Canlıda doğrulandı:** 27 Eylül'de komut satırından gönderilen kendinle işlemlerin beşi hakem listesinde settled göründü (649, 650, 651, 653, 654. turlar). Arayüzde değişiklik yok; sürüm numarası paketle aynı olsun diye 0.3.5 yapıldı.
+
 ## v0.3.4 (26 Eylül 2026)
 
 Canlı kayıt ve ilk kabul denemesinden sonra.

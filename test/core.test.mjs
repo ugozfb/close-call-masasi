@@ -4,7 +4,7 @@ import { test } from "node:test";
 import assert from "node:assert/strict";
 import { readFileSync } from "node:fs";
 import * as C from "../src/core.mjs";
-import { Fold } from "../src/fold.mjs";
+import { Fold, fmt } from "../src/fold.mjs";
 
 const V = JSON.parse(readFileSync(new URL("./vectors/core.json", import.meta.url), "utf8"));
 
@@ -105,6 +105,25 @@ test("uctan uca: teklif -> imza -> kabul -> trade metni -> dogrulama -> resmi fo
   const out = fold.sweep(12, "225.00", "225.05", [maker.did, taker.did],
     [{ ...trade.terms, countersigner: trade.taker }]);
   assert.equal(out.trades[0].outcome, "settled");
+});
+
+test("kendinle islem (kural 12): yalniz bilerek acilir, iki imza gecerli, fold'da settled, pozisyon degismez", async () => {
+  const me = await C.importSigner(V.keys[0].seed_hex);
+  const terms = C.makeTerms({ id: C.newTradeId(), maker: me.did, side: "buy", qty: "0.10", px: "224.53", taker: me.did, until: 40 });
+  const offerMsg = C.offerText(terms, await me.sign(C.makerPayload(terms)), "offer");
+  const [offer] = C.extractOffers("close1", [{ seq: 1, ts: "t", from: me.did, text: offerMsg }]);
+  await assert.rejects(C.acceptOffer(me, offer), /--kendinle/);
+  const tradeMsg = await C.acceptOffer(me, offer, { allowSelf: true });
+  const [trade] = C.extractTrades("close1", [{ seq: 2, ts: "t", from: me.did, text: tradeMsg }]);
+  assert.equal(await C.verifyTrade(trade), true);
+  const fold = new Fold({});
+  fold.seed("224.50");
+  const out = fold.sweep(12, "224.50", "224.53", [me.did], [{ ...trade.terms, countersigner: trade.taker }]);
+  assert.equal(out.trades[0].outcome, "settled");
+  const acc = fold.accounts.get(me.did);
+  assert.equal(acc.position, 0n);
+  // iki tarafin %1 ucreti: 2 x 0.01 x 0.10 x 224.53 = 0.44906 POLF
+  assert.equal(fmt(acc.cash, 6), "9999.550940");
 });
 
 test("mesaj bicimleri ve tel metni kurallari", () => {

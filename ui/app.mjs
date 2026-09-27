@@ -9,7 +9,7 @@ import * as C from "../src/core.mjs";
 import { dec, fmt } from "../src/fold.mjs";
 import { TEXT, LANGS } from "./i18n.mjs";
 
-const VERSION = "0.3.4";
+const VERSION = "0.3.5";
 const LOCAL = ["127.0.0.1", "localhost"].includes(location.hostname);
 // Yalniz yerel testte (127.0.0.1) ve test sayfasi ayarladiysa: sahte hakem anahtari.
 const TEST = LOCAL && globalThis.__CLOSECALL_TEST__ ? globalThis.__CLOSECALL_TEST__ : null;

@@ -1,6 +1,6 @@
 {
   "name": "closecall-core",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "description": "Close Call (FLOP Labs, close-1) icin ortak cekirdek: imza, mesaj, teklif defteri ve resmi fold'un JS kopyasi. Node ve tarayicida ayni kod.",
   "type": "module",
   "private": true,

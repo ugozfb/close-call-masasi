@@ -491,10 +491,14 @@ export async function verifyTrade(tr) {
   return a && b;
 }
 
-/** Karsi imza: bir teklifi kabul eden taker'in imzasini ve gonderilecek trade metnini uretir. */
-export async function acceptOffer(signer, offer) {
+/**
+ * Karsi imza: bir teklifi kabul eden taker'in imzasini ve gonderilecek trade metnini uretir.
+ * allowSelf: kendi teklifini kabul etmek (kural 12: iki tarafin ucretini oder, pozisyon degistirmez).
+ * Varsayilan kapali; yalniz bilerek istendiginde (CLI --kendinle) acilir.
+ */
+export async function acceptOffer(signer, offer, { allowSelf = false } = {}) {
   if (!(await verifyOffer(offer))) throw new Error("Teklifin maker imzasi dogrulanmadi.");
-  if (offer.terms.maker === signer.did) throw new Error("Kendi teklifini ayni DID ile kabul edemezsin.");
+  if (offer.terms.maker === signer.did && !allowSelf) throw new Error("Kendi teklifini ayni DID ile kabul edemezsin (bilerek istiyorsan: --kendinle).");
   if (offer.terms.taker !== "any" && offer.terms.taker !== signer.did) throw new Error("Bu teklif baska bir DID'e ayrilmis.");
   const takerSig = await signer.sign(takerPayload(offer.terms, signer.did));
   return tradeText(offer.terms, signer.did, offer.makerSig, takerSig);

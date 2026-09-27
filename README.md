@@ -1,4 +1,4 @@
-# Close Call Masası · closecall-core v0.3.4
+# Close Call Masası · closecall-core v0.3.5
 
 **English summary.** A community trading desk for the FLOP Labs *Close Call* contest (season `close-1`, `xyz:NVDA`) on technocore.chat. A browser UI and a command line share one core: Ed25519 `did:key` signing, an offer book, referee message reading, and a JavaScript port of the official fold. Your private key never leaves the browser tab; only signed messages are sent. No dependencies, Node 20+. The UI has a TR/EN switch; this README is in Turkish. **Not an official FLOP Labs product.**
 
@@ -7,7 +7,7 @@
 ```sh
 git clone https://github.com/ugozfb/close-call-masasi closecall-core
 cd closecall-core
-npm test            # 20 tests, offline
+npm test            # 21 tests, offline
 node ui/serve.mjs   # open http://127.0.0.1:5199/ui/
 ```
 
@@ -127,11 +127,14 @@ node cli\closecall.mjs kayit   --anahtar C:\dev\anahtar.json --gonder
 node cli\closecall.mjs maks    --nakit 10000 --fiyat 225.03 --yon long --kapanis-payi 0.02
 node cli\closecall.mjs teklif  --anahtar C:\dev\anahtar.json --yon long --miktar 2.5 --fiyat 225.10 --son-tur 900 --nakit 10000
 node cli\closecall.mjs kabul   --anahtar C:\dev\anahtar.json --teklif-dosya teklif-xyz.json --nakit 10000
+node cli\closecall.mjs durum   --id <islem-id>
 node cli\closecall.mjs dogrula --export data\close1-export-20260925T1403Z.jsonl.gz
 node cli\closecall.mjs defter  --export data\close1-export-20260925T1403Z.jsonl.gz --sonraki-tur 30 --ref 225.03
 node cli\closecall.mjs imzala  --anahtar C:\dev\anahtar.json --metin-dosya metin.txt
 ```
 
+- **`durum --id`:** Bu klasörden gönderilen işlemin hakem sonucunu gösterir (settled, ≈ settled, void, bekleniyor, bilinmiyor).
+- **`kabul --kendinle`:** Kendi teklifini bilerek kabul eder (kural 12: iki tarafın ücreti ödenir, pozisyon değişmez). Bakiyeni karşı taraftan bağımsız sınamak için.
 - **`--nakit`:** Kontrol listesinin bakiye maddesi için. Verilince açık pozisyon olmadığı varsayılır. Verilmezse bakiye "?" kalır; hakemin bakiyesi okunamıyor.
 - **`kayitlar.jsonl`:** Her kuru çalışma, engellenen deneme ve gönderim için bir satır. Özel anahtar yazılmaz.
 - **`closecall-nonce.json`:** Oda ve DID başına son nonce.
@@ -158,6 +161,8 @@ Başka biçim yok sayılır; görülmeyen likiditenin var ya da yok olduğu vars
 - **v0.3.0:** Sayfa açıldı, yerel köprü bağlandı. Hakem turu 268 "zamanında"; defter, grafik, açık miktar ve son işlemler doldu.
 - **v0.3.2:** Tur eşleme denetimi: hakem listesinde kimliği geçen 212 işlemin 212'sinde kayıt zamanından hesaplanan tur, listelendiği turla aynı.
 - **v0.3.4, GitHub Pages (26 Eylül):** Sayfa `ugozfb.github.io`'dan açıldı ve doğrudan bağlandı; referans, tur 374 "zamanında", defter, açık miktar ve son işlemler doldu. Gönderim ön sorgusu (`OPTIONS /r/close1`, Origin `https://ugozfb.github.io`) 200 döndü: `Access-Control-Allow-Origin: *`, `Access-Control-Allow-Methods: GET, POST`, izin verilen başlıklarda `Content-Type`.
+- **v0.3.4, GitHub Pages'ten gönderim (26 Eylül):** Sayfadan iki kabul gönderildi (LONG 0.10 @ 224.72 ve SHORT 8.00 @ 224.22); sunucu ikisine de 200 döndü, hakem 381. ve 383. turlarda işledi (`void · funds`). Kayıt satırı, v0.3.4'te eklenen yolla "kayıtlı (kesin)" gösterdi.
+- **v0.3.5, komut satırı ve kendinle işlem (27 Eylül):** `kabul --kendinle --gonder` ile 0,10 kontratlık kendinle işlemler gönderildi (kural 12), sunucu hepsine 200 döndü. Hakem 649, 650, 651, 653 ve 654. turlarda beşini **settled** olarak listeledi; iki turun listesi kısaltılmıştı, onların sonucu yayımlanmadı. `durum --id` bu sonuçları doğrudan okudu.
 - **v0.3.3, canlı kayıt ve işlem (26 Eylül):**
   - Kayıt arayüzden gönderildi; sunucu 200 döndü, 361. turda işlendi.
   - Test kabulü (LONG 0.10 @ 224.62) gönderildi; sunucu 200 döndü. Hakem 363. turda `void · funds` yazdı.
@@ -182,10 +187,8 @@ Başka biçim yok sayılır; görülmeyen likiditenin var ya da yok olduğu vars
 ## Doğrulanmayanlar
 
 - **Canlı teklif (maker):** Arayüzden ya da komut satırından canlı bir teklif yayımlanmadı.
-- **Canlı settled işlem:** Kendi hesabımızda settled bir işlem görülmedi. Defter ve bakiye hesabı resmî fold vektörleriyle ve testte sınandı, canlıda değil.
-- **Komut satırıyla canlı gönderim:** `--gonder` gerçek sunucuda denenmedi; canlı gönderimler arayüzden yapıldı.
-- **GitHub Pages'ten gerçek gönderim:** Ön sorgu izin veriyor, ama bu adresten henüz gerçek bir mesaj gönderilmedi. Canlı gönderimler yerel köprüden yapıldı.
-- **Hakemin void listesini hangi sırayla kısalttığı:** Bilinmiyor. Liste kısaltılmışsa sonuç "bilinmiyor" kalır.
+- **Başka bir hesapla settled işlem:** Taker olarak yapılan üç kabul `void · funds` ile düştü; settled olanlar kendinle işlemler. Pozisyon açan bir işlemle defter ve bakiye hesabının canlı sınaması henüz yok (resmî fold vektörleriyle ve testte sınandı).
+- **Hakemin listeleri hangi sırayla kısalttığı:** Bilinmiyor. Kalabalık turlarda void listesi çoğu zaman kısaltılıyor, settled listesi de eksik yayımlanıyor. Liste kısaltılmışsa sonuç "bilinmiyor" kalır.
 - **İmza doğrulamasında uç durumlar:** Doğrulama Web Crypto ile, sunucu libsodium ile. Kötü niyetli uç durum imzalarında ikisi ayrışabilir.
 - **Hakem DID'inin close-1 kaydı:** Kullanılan DID canlı hakem odalarını imzalayan anahtar ve FLOP Labs'ın sonnet-2 LAUNCH.md'sindeki hakem DID'iyle aynı. Close-1 için imzalı bir launch kaydı bulunamadı.
 
@@ -204,7 +207,7 @@ Başka biçim yok sayılır; görülmeyen likiditenin var ya da yok olduğu vars
 | `src/core.mjs` | did:key, anahtar içe aktarma, kanonik terms, oda imzası, teklif/işlem doğrulama, defter, hakem odaları, tur saati, ücret aralığı, fon kontrolü, gönderim öncesi kontrol |
 | `cli/closecall.mjs` | PowerShell dostu komut satırı |
 | `ui/` | Close Call Masası: `serve.mjs` (yerel köprü), `index.html`, `app.mjs`, `i18n.mjs`, `style.css` |
-| `test/` | 20 test ve vektörler (canlı hakem mesajları dahil); `test/browser/smoke.html` tarayıcı denemesi |
+| `test/` | 21 test ve vektörler (canlı hakem mesajları dahil); `test/browser/smoke.html` tarayıcı denemesi |
 | `tools/ui-test/` | Yalnız geliştirici testi: sahte technocore, uçtan uca tarayıcı testi (Python Playwright) |
 | `tools/` | Vektörleri resmî Python fold'u ve PyNaCl ile yeniden üreten betikler |
 | `data/` | 25 Eylül 14:03–14:11 UTC close1 odası kaydı (herkese açık veri) |

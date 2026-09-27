@@ -12,7 +12,7 @@ import { gunzipSync } from "node:zlib";
 import * as C from "../src/core.mjs";
 import { replay } from "../src/fold.mjs";
 
-const VERSION = "0.3.4";
+const VERSION = "0.3.5";
 const NONCE_FILE = "closecall-nonce.json";
 const LOG_FILE = "kayitlar.jsonl";
 
@@ -105,6 +105,21 @@ async function readReferee(opts) {
   }
 }
 
+/** Bu klasorun gonderim kaydinda (kayitlar.jsonl) bir islem kimliginin basariyla gonderildigi zaman. */
+function sentTimeOf(id) {
+  if (!existsSync(LOG_FILE)) return null;
+  let found = null;
+  for (const line of readFileSync(LOG_FILE, "utf8").split(/\r?\n/)) {
+    if (!line.trim()) continue;
+    try {
+      const e = JSON.parse(line);
+      const ok = typeof e.durum === "number" && e.durum >= 200 && e.durum < 300;
+      if (ok && typeof e.metin === "string" && e.metin.includes(`"id":"${id}"`) && e.metin.includes('"t":"trade"')) found = e.zaman;
+    } catch { /* bozuk satir */ }
+  }
+  return found;
+}
+
 const TAG = { ok: "[ TAMAM ]", fail: "[ HATA  ]", uyari: "[ UYARI ]", bilinmiyor: "[   ?   ]" };
 
 // Cekirdegin kontrol metinleri Turkce karakterli; PowerShell 5.1 konsolunda bozulmasin diye ASCII'ye cevrilir.
@@ -168,12 +183,13 @@ AGA CIKMAYANLAR
   fold     --olaylar <sezon.jsonl> [--config contest.json]
 
 HAKEMI OKUYANLAR (yalniz okuma; --cevrimdisi ile okumaz). Gondermek yalniz --gonder ile.
-  durum    [--did <did>]
+  durum    [--did <did>] [--id <islem-id> [--zaman <ISO>]]   --id: bu klasorden gonderilen islemin hakem sonucu
   kayit    --anahtar <dosya> [--oda close1] [--gonder]
   teklif   --anahtar <dosya> --yon long|short --miktar <q> --fiyat <p> --son-tur <n>
            [--karsi any|<did>] [--bicim offer|close-call.offer.v1] [--oda close1] [--id <id>]
            [--nakit <polf>] [--kapanis-payi 0.02] [--gonder]
-  kabul    --anahtar <dosya> --teklif-dosya <dosya> [--oda close1] [--nakit <polf>] [--kapanis-payi 0.02] [--gonder]
+  kabul    --anahtar <dosya> --teklif-dosya <dosya> [--oda close1] [--nakit <polf>] [--kapanis-payi 0.02] [--kendinle] [--gonder]
+           --kendinle: kendi teklifini kabul et (kural 12: iki tarafin ucreti odenir, pozisyon degismez)
 
 Ortak: --nonce-min <n> (odada daha buyuk bir nonce kullanildiysa), --cevrimdisi`;
 
@@ -202,6 +218,18 @@ async function main() {
       if (has(opts, "did")) {
         const f = C.findInFlow(r.flowMessages, { did: String(opts.did) });
         console.log(`DID akista            : ${f.hits.length ? "goruluyor" : "gorulmedi"}${!f.hits.length && f.partial ? " (liste kisaltilmis; ret kaniti degil)" : ""}`);
+      }
+      if (has(opts, "id")) {
+        const id = String(opts.id);
+        const ts = has(opts, "zaman") ? String(opts.zaman) : sentTimeOf(id);
+        const st = C.tradeStatus({ id, ts: ts || "", flowMessages: r.flowMessages });
+        const text = {
+          settled: `settled (tur ${st.n}, hakem listesinde)`,
+          settled_inferred: `~ settled (CIKARIM: tur ${st.n} void listesi tam ve id orada yok)`,
+          void: `void - ${st.reason} (tur ${st.n}, hakem listesinde)`,
+          pending: `tur ${st.n} bekleniyor (hakem o turu henuz yayimlamadi)`,
+        }[st.state] || `bilinmiyor (${{ truncated: `tur ${st.n} void listesi kisaltilmis`, missed: `tur ${st.n} hakem okuma boslugu`, window: `tur ${st.n} okunan pencerenin disinda`, no_time: "gonderim zamani yok: --zaman <ISO> ver" }[st.source] || st.source})`;
+        console.log(`Islem ${id} : ${text}`);
       }
       if (note) console.log(`not: ${note}`);
       break;
@@ -256,7 +284,14 @@ async function main() {
         process.exitCode = 2;
         break;
       }
-      const text = await C.acceptOffer(s, offer);
+      const self = offer.terms.maker === s.did;
+      if (self && opts.kendinle !== true) {
+        console.log("\nGONDERILMEDI: bu senin kendi teklifin. Bilerek kendinle islem yapmak istiyorsan --kendinle ekle.");
+        process.exitCode = 2;
+        break;
+      }
+      if (self) console.log("\nKendinle islem (kural 12): iki tarafin ucreti senden duser (toplam ~%2), pozisyonun degismez. Hakem yalniz ucretleri karsilayip karsilayamadigina bakar.");
+      const text = await C.acceptOffer(s, offer, { allowSelf: self });
       await sendOrShow(await C.signRoomMessage(s, room, text, nonceFor(s.did, room, opts)), opts, "kabul", pf.blocking);
       break;
     }
